@@ -1,0 +1,1489 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healing Essence | Transformative Hypnotherapy Retreat</title>
+    <link rel="icon" type="image/webp" href="assets/images/Favicon.webp" />
+
+    <!-- Meta/SEO -->
+    <meta
+      name="description"
+      content="Join our exclusive Healing Essence hypnotherapy retreat. Secure your spot today and begin your journey to pure inner peace and clarity."
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL,GRAD,opsz@300,0,0,24&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Razorpay Checkout JS -->
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "soft-white": "#FFFFFF",
+              "off-white": "#F8FAFC",
+              "logo-orange": "#E88C30",
+              "logo-purple": "#8E44AD",
+              "logo-blue": "#2980B9",
+              "logo-green": "#27AE60",
+              "logo-yellow": "#F1C40F",
+              "logo-red": "#C0392B",
+              primary: "#E88C30",
+              "primary-light": "#F39C12",
+              "accent-blue": "#3498DB",
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              display: ["Outfit", "sans-serif"],
+            },
+            animation: {
+              "pulse-glow":
+                "pulse-glow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+              float: "float 6s ease-in-out infinite",
+              "float-delayed": "float 6s ease-in-out 3s infinite",
+              "spin-slow": "spin 12s linear infinite",
+            },
+            keyframes: {
+              "pulse-glow": {
+                "0%, 100%": {
+                  transform: "scale(1)",
+                  boxShadow: "0 0 15px rgba(232, 140, 48, 0.4)",
+                },
+                "50%": {
+                  transform: "scale(1.02)",
+                  boxShadow: "0 0 35px rgba(243, 156, 18, 0.7)",
+                },
+              },
+              float: {
+                "0%, 100%": { transform: "translateY(0)" },
+                "50%": { transform: "translateY(-20px)" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="text-slate-800 dark:text-slate-100 antialiased overflow-x-hidden"
+  >
+    <!-- Ambient Animated Background -->
+    <div class="ambient-bg">
+      <div class="ambient-orb orb-1"></div>
+      <div class="ambient-orb orb-2"></div>
+      <div class="ambient-orb orb-3"></div>
+      <div class="ambient-orb orb-4"></div>
+      <div class="ambient-orb orb-5"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header
+      class="fixed top-0 w-full z-50 transition-all duration-300"
+      id="navbar"
+    >
+      <div
+        class="glass-panel mt-4 rounded-2xl px-6 py-2 mx-4 flex justify-between items-center transition-all duration-300"
+      >
+        <div class="flex items-center gap-3">
+          <img
+            src="assets/images/logo.png"
+            alt="Healing Essence Logo"
+            class="h-16 w-auto object-contain"
+          />
+        </div>
+
+        <nav class="hidden md:flex items-center gap-8">
+          <a
+            href="#about"
+            class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-primary transition-colors"
+            >Event Details</a
+          >
+          <a
+            href="#facilitator"
+            class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-primary transition-colors"
+            >Facilitator</a
+          >
+          <a
+            href="#testimonials"
+            class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-primary transition-colors"
+            >Testimonials</a
+          >
+          <a
+            href="#agenda"
+            class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-primary transition-colors"
+            >Agenda</a
+          >
+          <a
+            href="#faqs"
+            class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-primary transition-colors"
+            >FAQs</a
+          >
+        </nav>
+
+        <div class="flex items-center gap-4">
+          <!-- Theme Toggle Button -->
+          <button
+            id="theme-toggle"
+            class="theme-toggle-btn"
+            aria-label="Toggle Theme"
+          >
+            <span id="sun-icon" class="material-symbols-outlined"
+              >light_mode</span
+            >
+            <span id="moon-icon" class="material-symbols-outlined hidden"
+              >dark_mode</span
+            >
+          </button>
+
+          <a
+            href="#register"
+            class="rounded-xl bg-gradient-to-r from-logo-orange to-logo-yellow px-6 py-2.5 text-sm font-semibold text-white shadow-lg shadow-logo-orange/30 hover:shadow-xl hover:shadow-logo-orange/40 transition-all hover:-translate-y-0.5"
+          >
+            Join Now
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section
+        class="relative min-h-[90vh] flex items-center pt-28 pb-16 lg:pt-32 lg:pb-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto"
+      >
+        <div
+          class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center w-full"
+        >
+          <!-- Image -->
+          <div
+            class="lg:col-span-7 z-10"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            <!-- <div class="mb-8" data-aos="zoom-in" data-aos-delay="200">
+              <img
+                src="assets/images/logo.png"
+                alt="Healing Essence"
+                class="h-24 w-auto object-contain drop-shadow-md logo-blen"
+              />
+            </div> -->
+            <div
+              class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-panel mb-8 border border-logo-orange/20"
+            >
+              <span class="relative flex h-3 w-3">
+                <span
+                  class="animate-ping absolute inline-flex h-full w-full rounded-full bg-logo-orange opacity-75"
+                ></span>
+                <span
+                  class="relative inline-flex rounded-full h-3 w-3 bg-logo-orange"
+                ></span>
+              </span>
+              <span
+                class="text-xs font-semibold uppercase tracking-wider text-logo-orange"
+                >Exclusive Wellness Retreat</span
+              >
+            </div>
+
+            <h1
+              class="text-5xl sm:text-6xl lg:text-7xl font-display font-black leading-[1.1] mb-6 tracking-tight text-slate-900 dark:text-white"
+            >
+              Find Your <br />
+              <span class="text-logo-orange drop-shadow-sm">Inner Peace</span>
+              &amp; <br />
+              Mental Clarity
+            </h1>
+
+            <p
+              class="text-lg sm:text-xl text-slate-600 mb-10 leading-relaxed max-w-2xl font-light"
+            >
+              Join our guided 3-day holistic journey designed to rejuvenate your
+              mind, body, and spirit through ancient wisdom and modern
+              mindfulness.
+            </p>
+
+            <p class="text-sm font-display italic text-slate-400 mb-8">
+              Transforming Minds ...Healing Lives...
+            </p>
+
+            <!-- <div class="flex flex-wrap items-center gap-6">
+              <div class="flex -space-x-4">
+                <img
+                  class="w-12 h-12 rounded-full border-2 border-white object-cover shadow-sm"
+                  src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=100&q=80"
+                  alt="Attendee"
+                />
+                <img
+                  class="w-12 h-12 rounded-full border-2 border-white object-cover shadow-sm"
+                  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=100&q=80"
+                  alt="Attendee"
+                />
+                <img
+                  class="w-12 h-12 rounded-full border-2 border-white object-cover shadow-sm"
+                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80"
+                  alt="Attendee"
+                />
+                <div
+                  class="flex items-center justify-center w-12 h-12 rounded-full border-2 border-white bg-slate-100 text-xs font-bold text-slate-600 shadow-sm z-10"
+                >
+                  +500
+                </div>
+              </div>
+              <p class="text-sm font-medium text-slate-500 dark:text-slate-400">
+                Joined by 500+ seekers this month
+              </p>
+            </div> -->
+          </div>
+
+          <!-- Registration / Success Card Container -->
+          <div
+            class="lg:col-span-5 relative z-10"
+            id="register"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <!-- Form State -->
+            <div
+              id="registration-form-container"
+              class="glass-panel rounded-3xl p-8 sm:p-10 relative overflow-hidden group"
+            >
+              <!-- Decorative gradient blob inside card -->
+              <div
+                class="absolute -top-24 -right-24 w-48 h-48 bg-primary/20 rounded-full blur-3xl group-hover:bg-primary/30 transition-all duration-700"
+              ></div>
+              <div
+                class="absolute -bottom-24 -left-24 w-48 h-48 bg-accent-blue/20 rounded-full blur-3xl group-hover:bg-accent-blue/30 transition-all duration-700"
+              ></div>
+
+              <div class="relative z-10">
+                <h3
+                  class="text-3xl font-display font-bold mb-2 text-slate-800 dark:text-white"
+                >
+                  Reserve Your Journey
+                </h3>
+                <p
+                  class="text-slate-500 dark:text-slate-400 text-sm mb-8 font-medium"
+                >
+                  Limited availability for the next session.
+                </p>
+
+                <form id="payment-form" class="space-y-5">
+                  <div class="space-y-1.5">
+                    <label
+                      class="block text-xs font-bold uppercase tracking-wider text-slate-600 ml-1"
+                      >Full Name</label
+                    >
+                    <input
+                      id="reg-name"
+                      type="text"
+                      required
+                      placeholder="Nagaraja Rao"
+                      class="w-full px-5 py-4 rounded-xl border border-slate-200/50 bg-white/50 backdrop-blur-sm focus:bg-white focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all text-slate-800 placeholder-slate-400 outline-none shadow-inner"
+                    />
+                  </div>
+                  <div class="space-y-1.5">
+                    <label
+                      class="block text-xs font-bold uppercase tracking-wider text-slate-600 ml-1"
+                      >Email Address</label
+                    >
+                    <input
+                      id="reg-email"
+                      type="email"
+                      required
+                      placeholder="nagaraja@example.com"
+                      class="w-full px-5 py-4 rounded-xl border border-slate-200/50 bg-white/50 backdrop-blur-sm focus:bg-white focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all text-slate-800 placeholder-slate-400 outline-none shadow-inner"
+                    />
+                  </div>
+                  <div class="space-y-1.5">
+                    <label
+                      class="block text-xs font-bold uppercase tracking-wider text-slate-600 ml-1"
+                      >Phone Number</label
+                    >
+                    <input
+                      id="reg-phone"
+                      type="tel"
+                      required
+                      placeholder="+91 XXXXXXXXXX"
+                      class="w-full px-5 py-4 rounded-xl border border-slate-200/50 bg-white/50 backdrop-blur-sm focus:bg-white focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all text-slate-800 placeholder-slate-400 outline-none shadow-inner"
+                    />
+                  </div>
+
+                  <button
+                    id="reg-submit"
+                    type="submit"
+                    class="w-full py-4 bg-gradient-to-r from-logo-orange via-logo-yellow to-logo-orange bg-[length:200%_auto] hover:bg-right text-white font-display font-bold rounded-xl shadow-[0_8px_30px_rgb(232,140,48,0.3)] hover:shadow-[0_8px_40px_rgb(232,140,48,0.4)] hover:scale-[1.02] active:scale-[0.98] transition-all uppercase tracking-wider mt-8 animate-pulse-glow flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:shadow-none"
+                    disabled
+                  >
+                    <span>Pay ₹99 To Start Your Journey</span>
+                    <span class="material-symbols-outlined text-sm"
+                      >arrow_forward</span
+                    >
+                  </button>
+
+                  <div
+                    class="flex items-center justify-center gap-2 mt-4 text-xs font-medium text-slate-400"
+                  >
+                    <span class="material-symbols-outlined text-[16px]"
+                      >lock</span
+                    >
+                    <span>Secure processing via Razorpay</span>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <!-- Success State (Hidden by default) -->
+            <div
+              id="success-container"
+              class="glass-panel rounded-3xl p-8 sm:p-12 relative overflow-hidden hidden flex-col items-center justify-center text-center min-h-[500px]"
+            >
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-emerald-50/50 to-teal-50/50 z-0"
+              ></div>
+              <div class="relative z-10 flex flex-col items-center">
+                <!-- Animated Checkmark -->
+                <svg
+                  class="checkmark mb-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 52 52"
+                >
+                  <circle
+                    class="checkmark__circle"
+                    cx="26"
+                    cy="26"
+                    r="25"
+                    fill="none"
+                  />
+                  <path
+                    class="checkmark__check"
+                    fill="none"
+                    d="M14.1 27.2l7.1 7.2 16.7-16.8"
+                  />
+                </svg>
+
+                <h3
+                  class="text-3xl font-display font-black mb-4 text-slate-800"
+                >
+                  Payment Successful! <span class="text-3xl">🧘</span>
+                </h3>
+                <p
+                  class="text-slate-600 text-lg mb-8 leading-relaxed max-w-xs font-medium"
+                >
+                  Thank you for registering. Check your WhatsApp and Email for
+                  your exclusive join link. It's on its way!
+                </p>
+
+                <a
+                  href="/"
+                  class="px-8 py-3 rounded-xl bg-white text-slate-700 font-semibold shadow-sm border border-slate-200 hover:bg-slate-50 transition-colors"
+                >
+                  Return Home
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Event Details Section -->
+      <section id="about" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+          <span
+            class="text-primary font-bold tracking-widest uppercase text-sm mb-2 block"
+            >The Experience</span
+          >
+          <h2
+            class="text-4xl md:text-5xl font-display font-black text-slate-900 dark:text-white mb-6"
+          >
+            Event Details
+          </h2>
+          <p class="text-lg text-slate-500 dark:text-slate-400 font-light">
+            Everything you need to know about the upcoming Healing Essence
+            virtual sanctuary.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <!-- Left Column: Video -->
+          <div data-aos="fade-right">
+            <div
+              class="video-container glass-panel border border-primary/10 shadow-lg !mt-0"
+            >
+              <iframe
+                src="https://www.youtube.com/embed/H6Ctg33-G18?si=3xaXHHE7WS-NmFh5"
+                title="Healing Essence Event Feature"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <!-- Right Column: Event Info -->
+          <div class="space-y-6" data-aos="fade-left">
+            <!-- Date -->
+            <div
+              class="glass-panel rounded-2xl p-6 flex items-start gap-4 hover:bg-white/10 transition-colors"
+            >
+              <div
+                class="h-12 w-12 rounded-xl bg-logo-orange/10 flex items-center justify-center text-logo-orange flex-shrink-0"
+              >
+                <span class="material-symbols-outlined">calendar_month</span>
+              </div>
+              <div>
+                <h4 class="text-lg font-bold text-slate-900 dark:text-white">
+                  Date & Time
+                </h4>
+                <p class="text-slate-600 dark:text-slate-400">
+                  Oct 25 - 27, 2023
+                </p>
+                <p class="text-xs text-slate-500 font-medium">
+                  10:00 AM - 1:00 PM IST Daily
+                </p>
+              </div>
+            </div>
+
+            <!-- Location -->
+            <div
+              class="glass-panel rounded-2xl p-6 flex items-start gap-4 hover:bg-white/10 transition-colors"
+            >
+              <div
+                class="h-12 w-12 rounded-xl bg-logo-blue/10 flex items-center justify-center text-logo-blue flex-shrink-0"
+              >
+                <span class="material-symbols-outlined">location_on</span>
+              </div>
+              <div>
+                <h4 class="text-lg font-bold text-slate-900 dark:text-white">
+                  Location
+                </h4>
+                <p class="text-slate-600 dark:text-slate-400">
+                  Online Sanctuary (Zoom)
+                </p>
+                <p class="text-xs text-slate-500 font-medium">
+                  Accessible anytime, anywhere
+                </p>
+              </div>
+            </div>
+
+            <!-- What's Included -->
+            <div
+              class="glass-panel rounded-2xl p-6 flex items-start gap-4 hover:bg-white/10 transition-colors"
+            >
+              <div
+                class="h-12 w-12 rounded-xl bg-logo-purple/10 flex items-center justify-center text-logo-purple flex-shrink-0"
+              >
+                <span class="material-symbols-outlined"
+                  >featured_play_list</span
+                >
+              </div>
+              <div>
+                <h4 class="text-lg font-bold text-slate-900 dark:text-white">
+                  What's Included
+                </h4>
+                <ul
+                  class="text-sm text-slate-600 dark:text-slate-400 list-disc list-inside space-y-1"
+                >
+                  <li>Detailed Digital Workbook</li>
+                  <li>Recorded Healing Meditations</li>
+                  <li>Lifetime Community Access</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Facilitator Section -->
+      <section id="facilitator" class="py-24 relative">
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-transparent to-white/10 z-0 pointer-events-none"
+        ></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div
+            class="glass-panel rounded-[2.5rem] p-8 md:p-16 border border-white/20"
+          >
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+              <!-- Image -->
+              <div class="w-full lg:w-5/12 relative" data-aos="fade-right">
+                <!-- <div
+                  class="absolute -inset-4 bg-gradient-to-tr from-logo-orange to-logo-yellow rounded-[2.5rem] opacity-20 blur-2xl"
+                ></div> -->
+                <img
+                  src="assets/images/nagaraj-removebg.png"
+                  alt="D. Nagaraja Rao"
+                  class="w-full aspect-[4/5] object-cover rounded-[2rem] shadow-2xl relative z-10 p-4"
+                />
+                <div
+                  class="absolute animate-float-delayed -bottom-6 -right-6 glass-panel rounded-2xl p-4 shadow-xl z-20 flex items-center gap-3"
+                >
+                  <span
+                    class="material-symbols-outlined text-4xl text-logo-orange drop-shadow-sm"
+                    >verified</span
+                  >
+                  <div>
+                    <p
+                      class="font-display font-bold text-slate-800 dark:text-white lead-none"
+                    >
+                      25+ Years
+                    </p>
+                    <p class="text-xs text-slate-500 font-medium">Expertise</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Content -->
+              <div class="w-full lg:w-7/12" data-aos="fade-left">
+                <span
+                  class="text-logo-orange font-bold uppercase tracking-widest text-sm mb-3 block"
+                  >Meet Our Founder & Your Guide</span
+                >
+                <h2
+                  class="text-4xl md:text-5xl font-display font-black text-slate-900 dark:text-white mb-6"
+                >
+                  D. Nagaraja Rao
+                </h2>
+
+                <div class="bio-container relative mb-8">
+                  <div
+                    id="facilitator-bio"
+                    class="bio-wrapper text-lg text-slate-600 dark:text-slate-400 leading-relaxed font-light"
+                  >
+                    <p class="mb-4">
+                      At Healing Essence, we are dedicated to harnessing the
+                      incredible power of the mind and spirit to heal,
+                      transform, and help individuals realize their fullest
+                      potential.
+                    </p>
+                    <p class="mb-4">
+                      Founded by <strong>D. Nagaraja Rao</strong>, our practice
+                      specializes in Hypno-Healing and Past Life Regression
+                      (PLR). With over 25 years of experience in the IT
+                      industry, Mr. Rao has held prominent Senior Management
+                      roles contributing his expertise to multiple renowned
+                      organizations.
+                    </p>
+                    <p class="mb-4">
+                      His journey into the world of healing is deeply rooted in
+                      a passion for empowering others and fostering personal
+                      transformation. Our mission is to make this knowledge
+                      reachable to everyone.
+                    </p>
+                    <p>
+                      With over 15 years of experience in providing training and
+                      coaching, our services are designed to help you access
+                      your inner wisdom, release emotional blockages, and
+                      uncover the root causes of life’s challenges.
+                    </p>
+                    <div class="bio-gradient"></div>
+                  </div>
+                  <button id="bio-toggle" class="read-more-btn">
+                    <span>Read Full Story</span>
+                    <span
+                      class="material-symbols-outlined text-sm transition-transform duration-300"
+                      >expand_more</span
+                    >
+                  </button>
+                </div>
+
+                <ul class="space-y-4 mb-8">
+                  <li class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-logo-orange"
+                      >check_circle</span
+                    >
+                    <span class="font-medium text-slate-700 dark:text-slate-300"
+                      >25+ Years IT Senior Management Experience</span
+                    >
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-logo-purple"
+                      >check_circle</span
+                    >
+                    <span class="font-medium text-slate-700 dark:text-slate-300"
+                      >15+ Years Training & Coaching Expertise</span
+                    >
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-logo-blue"
+                      >check_circle</span
+                    >
+                    <span class="font-medium text-slate-700 dark:text-slate-300"
+                      >Specialist in Hypno-Healing & PLR</span
+                    >
+                  </li>
+                </ul>
+                <div class="flex flex-col sm:flex-row items-center gap-6">
+                  <!-- IPHM Accreditation Badge -->
+                  <div
+                    class="p-6 glass-panel rounded-2xl border border-primary/10 inline-flex items-center gap-6 cursor-pointer hover:bg-white/10 transition-all duration-300 group"
+                    id="view-certificate"
+                  >
+                    <div
+                      class="h-16 w-16 flex-shrink-0 bg-white/10 rounded-xl p-2 flex items-center justify-center"
+                    >
+                      <span
+                        class="material-symbols-outlined text-4xl text-logo-orange group-hover:scale-110 transition-transform"
+                        >workspace_premium</span
+                      >
+                    </div>
+                    <div>
+                      <p
+                        class="text-xs font-bold uppercase tracking-widest text-logo-orange mb-1"
+                      >
+                        Accredited by
+                      </p>
+                      <p
+                        class="text-lg font-bold text-slate-900 dark:text-white leading-tight"
+                      >
+                        IPHM Training Provider
+                      </p>
+                      <p
+                        class="text-sm text-slate-500 font-medium mt-1 underline underline-offset-4 decoration-primary/30 group-hover:decoration-primary transition-all"
+                      >
+                        Click to view certificate
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- <a
+                    href="#register"
+                    class="inline-flex items-center gap-2 text-logo-orange font-bold hover:text-logo-red transition-colors group px-6 py-3 rounded-xl border-2 border-logo-orange"
+                  >
+                    Begin your transformation
+                    <span
+                      class="material-symbols-outlined group-hover:translate-x-1 transition-transform"
+                      >arrow_forward</span
+                    >
+                  </a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+          <span
+            class="text-primary font-bold tracking-widest uppercase text-sm mb-2 block"
+            >Voices of Transformation</span
+          >
+          <h2
+            class="text-4xl md:text-5xl font-display font-black text-slate-900 dark:text-white mb-6"
+          >
+            Life-Changing Experiences
+          </h2>
+          <p class="text-lg text-slate-500 dark:text-slate-400 font-light">
+            Hear from those who have already started their journey with us.
+          </p>
+        </div>
+
+        <div class="testimonials-marquee-container" data-aos="fade-up">
+          <div class="testimonials-marquee-track">
+            <!-- Testimonial 1: Dr. Deepali -->
+            <div
+              class="testimonial-card-marquee glass-panel p-8 rounded-2xl border border-primary/5 italic glass-card-hover"
+            >
+              <div class="flex text-primary mb-4">
+                <span class="material-symbols-outlined text-[18px]">star</span>
+                <span class="material-symbols-outlined text-[18px]">star</span>
+                <span class="material-symbols-outlined text-[18px]">star</span>
+                <span class="material-symbols-outlined text-[18px]">star</span>
+                <span class="material-symbols-outlined text-[18px]">star</span>
+              </div>
+              <p
+                class="text-slate-600 dark:text-slate-300 mb-6 font-light text-sm leading-relaxed"
+              >
+                "Namaskaram everyone🌸 My name is Dr. Deepali and I did 2
+                sessions with Nagaraja Rao sir and it was a very healing
+                experience. I have noticed karmic patterns for 15 years... I did
+                inner child healing and Past Life Regression. It gave me fair
+                insight and helped me shift from 'victimization stage' to being
+                'responsible' for everything. Mind boggling experience!🌸"
+              </p>
+              <div class="flex items-center gap-4">
+                <div
+                  class="h-10 w-10 rounded-full bg-gradient-to-tr from-logo-purple to-logo-red flex items-center justify-center text-white font-bold shadow-sm"
+                >
+                  DD
+                </div>
+                <div>
+                  <p
+                    class="font-bold not-italic text-sm text-slate-800 dark:text-slate-200"
+                  >
+                    Dr. Deepali
+                  </p>
+                  <p class="text-xs text-slate-500 not-italic">
+                    Healing Participant
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 2: Sravya -->
+            <div
+              class="testimonial-card-marquee glass-panel p-8 rounded-2xl border border-primary/5 italic glass-card-hover"
+            >
+              <div class="flex text-primary mb-4">
+                <span class="material-symbols-outlined text-[18px]">star</span>
+                <span class="material-symbols-outlined text-[18px]">star</span>
+                <span class="material-symbols-outlined text-[18px]">star</span>
+                <span class="material-symbols-outlined text-[18px]">star</span>
+                <span class="material-symbols-outlined text-[18px]">star</span>
+              </div>
+              <p
+                class="text-slate-600 dark:text-slate-300 mb-6 font-light text-sm leading-relaxed"
+              >
+                "The Past Life Regression session with Mr. Rao was a revelation.
+                It helped me understand deep-seated patterns and brought a level
+                of clarity I never thought possible. His guidance is gentle yet
+                profound."
+              </p>
+              <div class="flex items-center gap-4">
+                <div
+                  class="h-10 w-10 rounded-full bg-gradient-to-tr from-logo-orange to-logo-yellow flex items-center justify-center text-white font-bold shadow-sm"
+                >
+                  S
+                </div>
+                <div>
+                  <p
+                    class="font-bold not-italic text-sm text-slate-800 dark:text-slate-200"
+                  >
+                    Sravya
+                  </p>
+                  <p class="text-xs text-slate-500 not-italic">
+                    Healing Participant
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 3: Diwakar -->
+            <div
+              class="testimonial-card-marquee glass-panel p-8 rounded-2xl border border-primary/5 italic glass-card-hover"
+            >
+              <div class="flex text-primary mb-4">
+                <span class="material-symbols-outlined text-[18px]">star</span>
+                <span class="material-symbols-outlined text-[18px]">star</span>
+                <span class="material-symbols-outlined text-[18px]">star</span>
+                <span class="material-symbols-outlined text-[18px]">star</span>
+                <span class="material-symbols-outlined text-[18px]">star</span>
+              </div>
+              <p
+                class="text-slate-600 dark:text-slate-300 mb-6 font-light text-sm leading-relaxed"
+              >
+                "Coming from a high-stress professional background, I resonated
+                with Mr. Rao's structured approach. The Inner Child healing
+                session was transformative for my mental health and overall
+                well-being."
+              </p>
+              <div class="flex items-center gap-4">
+                <div
+                  class="h-10 w-10 rounded-full bg-gradient-to-tr from-logo-blue to-logo-purple flex items-center justify-center text-white font-bold shadow-sm"
+                >
+                  D
+                </div>
+                <div>
+                  <p
+                    class="font-bold not-italic text-sm text-slate-800 dark:text-slate-200"
+                  >
+                    Diwakar
+                  </p>
+                  <p class="text-xs text-slate-500 not-italic">
+                    Corporate Professional
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 4: Aravind -->
+            <div
+              class="testimonial-card-marquee glass-panel p-8 rounded-2xl border border-primary/5 italic glass-card-hover"
+            >
+              <div class="flex text-primary mb-4">
+                <span class="material-symbols-outlined text-[18px]">star</span>
+                <span class="material-symbols-outlined text-[18px]">star</span>
+                <span class="material-symbols-outlined text-[18px]">star</span>
+                <span class="material-symbols-outlined text-[18px]">star</span>
+                <span class="material-symbols-outlined text-[18px]">star</span>
+              </div>
+              <p
+                class="text-slate-600 dark:text-slate-300 mb-6 font-light text-sm leading-relaxed"
+              >
+                "Hypno-Healing at Healing Essence reached the root causes of my
+                anxiety. Mr. Rao has a way of making you feel safe and
+                understood from the very first minute. Simply life-changing
+                experience."
+              </p>
+              <div class="flex items-center gap-4">
+                <div
+                  class="h-10 w-10 rounded-full bg-gradient-to-tr from-logo-green to-logo-blue flex items-center justify-center text-white font-bold shadow-sm"
+                >
+                  A
+                </div>
+                <div>
+                  <p
+                    class="font-bold not-italic text-sm text-slate-800 dark:text-slate-200"
+                  >
+                    Aravind
+                  </p>
+                  <p class="text-xs text-slate-500 not-italic">Entrepreneur</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- DUPLICATES FOR INFINITE LOOP -->
+            <!-- Testimonial 1: Dr. Deepali -->
+            <div
+              class="testimonial-card-marquee glass-panel p-8 rounded-2xl border border-primary/5 italic glass-card-hover"
+            >
+              <div class="flex text-primary mb-4">
+                <span class="material-symbols-outlined text-[18px]">star</span>
+                <span class="material-symbols-outlined text-[18px]">star</span>
+                <span class="material-symbols-outlined text-[18px]">star</span>
+                <span class="material-symbols-outlined text-[18px]">star</span>
+                <span class="material-symbols-outlined text-[18px]">star</span>
+              </div>
+              <p
+                class="text-slate-600 dark:text-slate-300 mb-6 font-light text-sm leading-relaxed"
+              >
+                "Namaskaram everyone🌸 My name is Dr. Deepali and I did 2
+                sessions with Nagaraja Rao sir and it was a very healing
+                experience. I have noticed karmic patterns for 15 years... I did
+                inner child healing and Past Life Regression. It gave me fair
+                insight and helped me shift from 'victimization stage' to being
+                'responsible' for everything. Mind boggling experience!🌸"
+              </p>
+              <div class="flex items-center gap-4">
+                <div
+                  class="h-10 w-10 rounded-full bg-gradient-to-tr from-logo-purple to-logo-red flex items-center justify-center text-white font-bold shadow-sm"
+                >
+                  DD
+                </div>
+                <div>
+                  <p
+                    class="font-bold not-italic text-sm text-slate-800 dark:text-slate-200"
+                  >
+                    Dr. Deepali
+                  </p>
+                  <p class="text-xs text-slate-500 not-italic">
+                    Healing Participant
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 2: Sravya -->
+            <div
+              class="testimonial-card-marquee glass-panel p-8 rounded-2xl border border-primary/5 italic glass-card-hover"
+            >
+              <div class="flex text-primary mb-4">
+                <span class="material-symbols-outlined text-[18px]">star</span>
+                <span class="material-symbols-outlined text-[18px]">star</span>
+                <span class="material-symbols-outlined text-[18px]">star</span>
+                <span class="material-symbols-outlined text-[18px]">star</span>
+                <span class="material-symbols-outlined text-[18px]">star</span>
+              </div>
+              <p
+                class="text-slate-600 dark:text-slate-300 mb-6 font-light text-sm leading-relaxed"
+              >
+                "The Past Life Regression session with Mr. Rao was a revelation.
+                It helped me understand deep-seated patterns and brought a level
+                of clarity I never thought possible. His guidance is gentle yet
+                profound."
+              </p>
+              <div class="flex items-center gap-4">
+                <div
+                  class="h-10 w-10 rounded-full bg-gradient-to-tr from-logo-orange to-logo-yellow flex items-center justify-center text-white font-bold shadow-sm"
+                >
+                  S
+                </div>
+                <div>
+                  <p
+                    class="font-bold not-italic text-sm text-slate-800 dark:text-slate-200"
+                  >
+                    Sravya
+                  </p>
+                  <p class="text-xs text-slate-500 not-italic">
+                    Healing Participant
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 3: Diwakar -->
+            <div
+              class="testimonial-card-marquee glass-panel p-8 rounded-2xl border border-primary/5 italic glass-card-hover"
+            >
+              <div class="flex text-primary mb-4">
+                <span class="material-symbols-outlined text-[18px]">star</span>
+                <span class="material-symbols-outlined text-[18px]">star</span>
+                <span class="material-symbols-outlined text-[18px]">star</span>
+                <span class="material-symbols-outlined text-[18px]">star</span>
+                <span class="material-symbols-outlined text-[18px]">star</span>
+              </div>
+              <p
+                class="text-slate-600 dark:text-slate-300 mb-6 font-light text-sm leading-relaxed"
+              >
+                "Coming from a high-stress professional background, I resonated
+                with Mr. Rao's structured approach. The Inner Child healing
+                session was transformative for my mental health and overall
+                well-being."
+              </p>
+              <div class="flex items-center gap-4">
+                <div
+                  class="h-10 w-10 rounded-full bg-gradient-to-tr from-logo-blue to-logo-purple flex items-center justify-center text-white font-bold shadow-sm"
+                >
+                  D
+                </div>
+                <div>
+                  <p
+                    class="font-bold not-italic text-sm text-slate-800 dark:text-slate-200"
+                  >
+                    Diwakar
+                  </p>
+                  <p class="text-xs text-slate-500 not-italic">
+                    Corporate Professional
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 4: Aravind -->
+            <div
+              class="testimonial-card-marquee glass-panel p-8 rounded-2xl border border-primary/5 italic glass-card-hover"
+            >
+              <div class="flex text-primary mb-4">
+                <span class="material-symbols-outlined text-[18px]">star</span>
+                <span class="material-symbols-outlined text-[18px]">star</span>
+                <span class="material-symbols-outlined text-[18px]">star</span>
+                <span class="material-symbols-outlined text-[18px]">star</span>
+                <span class="material-symbols-outlined text-[18px]">star</span>
+              </div>
+              <p
+                class="text-slate-600 dark:text-slate-300 mb-6 font-light text-sm leading-relaxed"
+              >
+                "Hypno-Healing at Healing Essence reached the root causes of my
+                anxiety. Mr. Rao has a way of making you feel safe and
+                understood from the very first minute. Simply life-changing
+                experience."
+              </p>
+              <div class="flex items-center gap-4">
+                <div
+                  class="h-10 w-10 rounded-full bg-gradient-to-tr from-logo-green to-logo-blue flex items-center justify-center text-white font-bold shadow-sm"
+                >
+                  A
+                </div>
+                <div>
+                  <p
+                    class="font-bold not-italic text-sm text-slate-800 dark:text-slate-200"
+                  >
+                    Aravind
+                  </p>
+                  <p class="text-xs text-slate-500 not-italic">Entrepreneur</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Video Testimonials Section -->
+      <section
+        id="video-testimonials"
+        class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto"
+      >
+        <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+          <span
+            class="text-primary font-bold tracking-widest uppercase text-sm mb-2 block"
+            >Visual Proof</span
+          >
+          <h2
+            class="text-4xl md:text-5xl font-display font-black text-slate-900 dark:text-white mb-6"
+          >
+            Glimpses of Transformation
+          </h2>
+          <p class="text-lg text-slate-500 dark:text-slate-400 font-light">
+            Watch real stories of healing and breakthrough from our
+            participants.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <!-- Video Card 1 -->
+          <div
+            class="group cursor-pointer relative video-card-trigger"
+            data-aos="zoom-in"
+            data-video-src="assets/review/client-review-video-1.mp4"
+          >
+            <div
+              class="glass-panel rounded-[2.5rem] overflow-hidden border border-white/20 aspect-video relative bg-slate-100 dark:bg-slate-900"
+            >
+              <video
+                src="assets/review/client-review-video-1.mp4"
+                class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500"
+                muted
+                loop
+                playsinline
+                autoplay
+              ></video>
+              <div
+                class="absolute inset-0 flex items-center justify-center bg-slate-900/20 group-hover:bg-transparent transition-all"
+              >
+                <div
+                  class="h-20 w-20 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/40 group-hover:scale-110 transition-transform duration-500 shadow-xl"
+                >
+                  <span class="material-symbols-outlined text-white text-5xl"
+                    >play_arrow</span
+                  >
+                </div>
+              </div>
+              <div
+                class="absolute bottom-6 left-6 right-6 p-6 glass-panel rounded-2xl border-white/10 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 hidden md:block"
+              >
+                <p class="text-white font-bold text-lg mb-1">
+                  Session Insights
+                </p>
+                <p class="text-white/80 text-sm">
+                  Experience the profound depth of Inner Child Healing.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video Card 2 -->
+          <div
+            class="group cursor-pointer relative video-card-trigger"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+            data-video-src="assets/review/client-review-video-2.mp4"
+          >
+            <div
+              class="glass-panel rounded-[2.5rem] overflow-hidden border border-white/20 aspect-video relative bg-slate-100 dark:bg-slate-900"
+            >
+              <video
+                src="assets/review/client-review-video-2.mp4"
+                class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500"
+                muted
+                loop
+                playsinline
+                autoplay
+              ></video>
+              <div
+                class="absolute inset-0 flex items-center justify-center bg-slate-900/20 group-hover:bg-transparent transition-all"
+              >
+                <div
+                  class="h-20 w-20 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/40 group-hover:scale-110 transition-transform duration-500 shadow-xl"
+                >
+                  <span class="material-symbols-outlined text-white text-5xl"
+                    >play_arrow</span
+                  >
+                </div>
+              </div>
+              <div
+                class="absolute bottom-6 left-6 right-6 p-6 glass-panel rounded-2xl border-white/10 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 hidden md:block"
+              >
+                <p class="text-white font-bold text-lg mb-1">PLR Journey</p>
+                <p class="text-white/80 text-sm">
+                  Witness the clarity gained through Past Life Regression.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Training Agenda Section -->
+      <section id="agenda" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+          <span
+            class="text-primary font-bold tracking-widest uppercase text-sm mb-2 block"
+            >Journey Roadmap</span
+          >
+          <h2
+            class="text-4xl md:text-5xl font-display font-black text-slate-900 dark:text-white mb-6"
+          >
+            Training Agenda
+          </h2>
+          <p class="text-lg text-slate-500 dark:text-slate-400 font-light">
+            A step-by-step breakdown of your transformative weekend.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Day 1 -->
+          <div
+            class="glass-panel rounded-3xl p-8 border border-logo-orange/10 relative overflow-hidden"
+            data-aos="fade-right"
+          >
+            <div class="absolute top-0 right-0 p-4">
+              <span class="text-6xl font-display font-black text-logo-orange/5"
+                >01</span
+              >
+            </div>
+            <h3 class="text-3xl font-display font-black text-logo-orange mb-6">
+              Day 1: Grounding & Awareness
+            </h3>
+            <ul class="space-y-6">
+              <li class="flex gap-4">
+                <div
+                  class="flex-shrink-0 w-12 h-12 rounded-xl bg-logo-orange/10 flex items-center justify-center text-logo-orange font-bold text-sm"
+                >
+                  10:00
+                </div>
+                <div>
+                  <h4 class="font-bold text-slate-800 dark:text-white">
+                    Opening Ceremony & Intentions
+                  </h4>
+                  <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">
+                    Setting the stage for your personal transformation.
+                  </p>
+                </div>
+              </li>
+              <li class="flex gap-4">
+                <div
+                  class="flex-shrink-0 w-12 h-12 rounded-xl bg-logo-orange/10 flex items-center justify-center text-logo-orange font-bold text-sm"
+                >
+                  11:30
+                </div>
+                <div>
+                  <h4 class="font-bold text-slate-800 dark:text-white">
+                    Breathwork Basics
+                  </h4>
+                  <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">
+                    Ancient techniques to calm the nervous system instantly.
+                  </p>
+                </div>
+              </li>
+              <li class="flex gap-4">
+                <div
+                  class="flex-shrink-0 w-12 h-12 rounded-xl bg-logo-orange/10 flex items-center justify-center text-logo-orange font-bold text-sm"
+                >
+                  1:00
+                </div>
+                <div>
+                  <h4 class="font-bold text-slate-800 dark:text-white">
+                    Guided Visualization
+                  </h4>
+                  <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">
+                    Connecting with your inner sanctuary through deep focus.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Day 2 -->
+          <div
+            class="glass-panel rounded-3xl p-8 border border-logo-blue/10 relative overflow-hidden"
+            data-aos="fade-left"
+          >
+            <div class="absolute top-0 right-0 p-4">
+              <span class="text-6xl font-display font-black text-logo-blue/5"
+                >02</span
+              >
+            </div>
+            <h3 class="text-3xl font-display font-black text-logo-blue mb-6">
+              Day 2: Deep Transformation
+            </h3>
+            <ul class="space-y-6">
+              <li class="flex gap-4">
+                <div
+                  class="flex-shrink-0 w-12 h-12 rounded-xl bg-logo-blue/10 flex items-center justify-center text-logo-blue font-bold text-sm"
+                >
+                  10:00
+                </div>
+                <div>
+                  <h4 class="font-bold text-slate-800 dark:text-white">
+                    Emotional Release Session
+                  </h4>
+                  <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">
+                    Safe practices for letting go of accumulated stress and
+                    blockages.
+                  </p>
+                </div>
+              </li>
+              <li class="flex gap-4">
+                <div
+                  class="flex-shrink-0 w-12 h-12 rounded-xl bg-logo-blue/10 flex items-center justify-center text-logo-blue font-bold text-sm"
+                >
+                  11:30
+                </div>
+                <div>
+                  <h4 class="font-bold text-slate-800 dark:text-white">
+                    The Power of Stillness
+                  </h4>
+                  <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">
+                    Advanced meditation techniques for profound mental clarity.
+                  </p>
+                </div>
+              </li>
+              <li class="flex gap-4">
+                <div
+                  class="flex-shrink-0 w-12 h-12 rounded-xl bg-logo-blue/10 flex items-center justify-center text-logo-blue font-bold text-sm"
+                >
+                  1:00
+                </div>
+                <div>
+                  <h4 class="font-bold text-slate-800 dark:text-white">
+                    Integration & Closing
+                  </h4>
+                  <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">
+                    Bringing your new insights into daily life with a clear
+                    plan.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQs Section -->
+      <section id="faqs" class="py-24 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <span
+            class="text-primary font-bold tracking-widest uppercase text-sm mb-2 block"
+            >Common Questions</span
+          >
+          <h2
+            class="text-4xl md:text-5xl font-display font-black text-slate-900 dark:text-white mb-6"
+          >
+            Frequently Asked Questions
+          </h2>
+          <p class="text-lg text-slate-500 dark:text-slate-400 font-light">
+            Everything you need to know about the Healing Essence journey.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <!-- FAQ 1 -->
+          <details
+            class="group glass-panel rounded-2xl border border-primary/5 shadow-sm overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <summary
+              class="flex items-center justify-between p-6 cursor-pointer list-none"
+            >
+              <h4 class="font-bold text-slate-800 dark:text-slate-200">
+                What is included in the ₹99 session?
+              </h4>
+              <span
+                class="material-symbols-outlined group-open:rotate-180 transition-transform text-primary"
+                >expand_more</span
+              >
+            </summary>
+            <div
+              class="p-6 pt-0 border-t border-slate-100 dark:border-slate-800 transition-all duration-300"
+            >
+              <p
+                class="text-slate-600 dark:text-slate-400 font-light leading-relaxed"
+              >
+                The introductory session includes a 90-minute live workshop, a
+                guided meditation audio track, and a PDF starter kit to begin
+                your journey at home.
+              </p>
+            </div>
+          </details>
+
+          <!-- FAQ 2 -->
+          <details
+            class="group glass-panel rounded-2xl border border-primary/5 shadow-sm overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <summary
+              class="flex items-center justify-between p-6 cursor-pointer list-none"
+            >
+              <h4 class="font-bold text-slate-800 dark:text-slate-200">
+                Do I need any previous experience?
+              </h4>
+              <span
+                class="material-symbols-outlined group-open:rotate-180 transition-transform text-primary"
+                >expand_more</span
+              >
+            </summary>
+            <div
+              class="p-6 pt-0 border-t border-slate-100 dark:border-slate-800"
+            >
+              <p
+                class="text-slate-600 dark:text-slate-400 font-light leading-relaxed"
+              >
+                Not at all! This retreat is designed for all levels, from
+                complete beginners to advanced practitioners looking to deepen
+                their connection.
+              </p>
+            </div>
+          </details>
+
+          <!-- FAQ 3 -->
+          <details
+            class="group glass-panel rounded-2xl border border-primary/5 shadow-sm overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <summary
+              class="flex items-center justify-between p-6 cursor-pointer list-none"
+            >
+              <h4 class="font-bold text-slate-800 dark:text-slate-200">
+                How do I access the virtual sessions?
+              </h4>
+              <span
+                class="material-symbols-outlined group-open:rotate-180 transition-transform text-primary"
+                >expand_more</span
+              >
+            </summary>
+            <div
+              class="p-6 pt-0 border-t border-slate-100 dark:border-slate-800"
+            >
+              <p
+                class="text-slate-600 dark:text-slate-400 font-light leading-relaxed"
+              >
+                Once you register, you'll receive an email with a unique Zoom
+                link and instructions on how to prepare your space for the best
+                experience.
+              </p>
+            </div>
+          </details>
+
+          <!-- FAQ 4 -->
+          <details
+            class="group glass-panel rounded-2xl border border-primary/5 shadow-sm overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <summary
+              class="flex items-center justify-between p-6 cursor-pointer list-none"
+            >
+              <h4 class="font-bold text-slate-800 dark:text-slate-200">
+                What if I miss a live session?
+              </h4>
+              <span
+                class="material-symbols-outlined group-open:rotate-180 transition-transform text-primary"
+                >expand_more</span
+              >
+            </summary>
+            <div
+              class="p-6 pt-0 border-t border-slate-100 dark:border-slate-800"
+            >
+              <p
+                class="text-slate-600 dark:text-slate-400 font-light leading-relaxed"
+              >
+                All sessions are recorded and made available to registered
+                participants for 30 days following the event.
+              </p>
+            </div>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="glass-panel border-t border-white/50 mt-12 py-10 rounded-t-[3rem] text-center relative z-10"
+    >
+      <div class="max-w-7xl mx-auto px-4 flex flex-col items-center">
+        <div class="mb-4 opacity-80 hover:opacity-100 transition-opacity">
+          <img
+            src="assets/images/logo.png"
+            alt="Healing Essence Logo"
+            class="h-10 w-auto object-contain mx-auto"
+          />
+        </div>
+        <p class="text-sm text-slate-500 mb-6 max-w-sm">
+          Elevate your mind, body, and soul. Your journey into serenity starts
+          here.
+        </p>
+        <div class="text-xs text-slate-400">
+          © 2026 Healing Essence Retreats. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <!-- App Logic -->
+    <script src="script.js"></script>
+    <!-- Certificate Modal -->
+    <div
+      id="certificate-modal"
+      class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4"
+    >
+      <div
+        class="absolute inset-0 bg-slate-900/90 backdrop-blur-sm"
+        id="close-modal-bg"
+      ></div>
+      <div
+        class="relative bg-white dark:bg-slate-800 rounded-3xl p-4 max-w-4xl w-full shadow-2xl transform scale-95 opacity-0 transition-all duration-300"
+        id="modal-content"
+      >
+        <button
+          id="close-modal-btn"
+          class="absolute -top-12 right-0 text-white flex items-center gap-2 hover:text-logo-orange transition-colors"
+        >
+          <span class="material-symbols-outlined">close</span>
+          <span class="font-bold">Close</span>
+        </button>
+        <img
+          src="assets/images/certification.jpeg"
+          alt="IPHM Certificate of Accreditation - D. Nagaraja Rao - Accredited Training Provider - Valid until Feb 2027"
+          class="w-full h-auto rounded-2xl shadow-inner"
+        />
+      </div>
+    </div>
+    <!-- Video Modal -->
+    <div
+      id="video-modal"
+      class="fixed inset-0 z-[110] hidden flex items-center justify-center p-4"
+    >
+      <div
+        class="absolute inset-0 bg-slate-900/95 backdrop-blur-md"
+        id="close-video-modal-bg"
+      ></div>
+      <div
+        class="relative w-full max-w-5xl aspect-video bg-black rounded-3xl overflow-hidden shadow-2xl transform scale-95 opacity-0 transition-all duration-300"
+        id="video-modal-content"
+      >
+        <button
+          id="close-video-modal-btn"
+          class="absolute top-4 right-4 z-20 text-white/50 hover:text-white transition-colors"
+        >
+          <span class="material-symbols-outlined text-4xl">close</span>
+        </button>
+        <video id="modal-video-player" class="w-full h-full" controls></video>
+      </div>
+    </div>
+  </body>
+</html>
