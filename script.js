@@ -64,45 +64,32 @@ document.addEventListener('DOMContentLoaded', () => {
         paymentForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Simulate Razorpay options for a static site
-            // In a real app, 'order_id' would come from the backend.
-            var options = {
-                "key": "rzp_test_mockkey123456", // Enter the Key ID generated from the Dashboard
-                "amount": "9900", // Amount is in currency subunits. Default currency is INR. Hence, 9900 means ₹99.
-                "currency": "INR",
-                "name": "Healing Essence",
-                "description": "Virtual Retreat Registration",
-                "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=150&q=80",
-                "handler": function (response){
-                    // Redirect to success page on successful payment
-                    console.log("Payment successful ID: " + response.razorpay_payment_id);
-                    
-                    // Create base URL without query parameters
-                    const url = new URL(window.location.href);
-                    url.searchParams.set('status', 'success');
-                    
-                    window.location.href = url.toString();
-                },
-                "prefill": {
-                    "name": paymentForm.querySelector('input[type="text"]').value,
-                    "email": paymentForm.querySelector('input[type="email"]').value,
-                    "contact": paymentForm.querySelector('input[type="tel"]').value
-                },
-                "theme": {
-                    "color": "#8B5CF6" // Primary purple color
-                }
-            };
+            const name = document.getElementById('reg-name').value;
+            const email = document.getElementById('reg-email').value;
+            const phone = document.getElementById('reg-phone').value;
+            const city = document.getElementById('reg-city').value;
             
-            try {
-                var rzp1 = new Razorpay(options);
-                rzp1.on('payment.failed', function (response){
-                    alert("Payment Failed. Reason: " + response.error.description);
-                });
-                rzp1.open();
-            } catch (err) {
-                console.error("Razorpay script not loaded or initialization failed.", err);
-                alert("Payment gateway error. Please try again later.");
-            }
+            // Add click animation effect
+            const btn = document.getElementById('reg-submit');
+            btn.classList.add('scale-95', 'opacity-80');
+            btn.innerHTML = '<span>Processing...</span><span class="animate-spin material-symbols-outlined text-sm">progress_activity</span>';
+
+            // Construct Razorpay URL with dynamic parameters
+            // Format: https://pages.razorpay.com/pl_QfQlTWyBxzmJ7t/view?email=user@example.com&phone=9876543210&name=Kumaran%20J&city=hydrabad
+            const baseUrl = "https://pages.razorpay.com/pl_QfQlTWyBxzmJ7t/view";
+            const params = new URLSearchParams({
+                email: email,
+                phone: phone,
+                name: name,
+                city: city
+            });
+            
+            const redirectUrl = `${baseUrl}?${params.toString()}`;
+            
+            // Redirect after a brief animation delay
+            setTimeout(() => {
+                window.location.href = redirectUrl;
+            }, 600);
         });
     }
 
@@ -202,23 +189,42 @@ document.addEventListener('DOMContentLoaded', () => {
     const regName = document.getElementById('reg-name');
     const regEmail = document.getElementById('reg-email');
     const regPhone = document.getElementById('reg-phone');
+    const regCity = document.getElementById('reg-city');
     const regSubmit = document.getElementById('reg-submit');
 
-    if (regName && regEmail && regPhone && regSubmit) {
+    if (regName && regEmail && regPhone && regCity && regSubmit) {
         const validateForm = () => {
             const isNameValid = regName.value.trim().length > 0;
             const isEmailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(regEmail.value);
             const isPhoneValid = regPhone.value.trim().length >= 10;
+            const isCityValid = regCity.value.trim().length > 0;
 
-            if (isNameValid && isEmailValid && isPhoneValid) {
+            if (isNameValid && isEmailValid && isPhoneValid && isCityValid) {
                 regSubmit.disabled = false;
             } else {
                 regSubmit.disabled = true;
             }
         };
 
-        [regName, regEmail, regPhone].forEach(input => {
+        [regName, regEmail, regPhone, regCity].forEach(input => {
             input.addEventListener('input', validateForm);
+        });
+    }
+
+    // --- Floating CTA Scroll Visibility ---
+    const floatingCTA = document.getElementById('floating-cta');
+    if (floatingCTA) {
+        window.addEventListener('scroll', () => {
+            const scrollPos = window.scrollY;
+            const scrollTotal = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollBottom = scrollTotal - scrollPos;
+
+            // Show after 400px but hide if we are within 100px of the bottom
+            if (scrollPos > 400 && scrollBottom > 100) {
+                floatingCTA.classList.remove('translate-y-32', 'opacity-0', 'pointer-events-none');
+            } else {
+                floatingCTA.classList.add('translate-y-32', 'opacity-0', 'pointer-events-none');
+            }
         });
     }
 });
