@@ -1,978 +1,450 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Healing Essence | Transformative Hypnotherapy Retreat</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinical Hypnotherapy & Past Life Regression | Nagaraja Rao</title>
     <link rel="icon" type="image/webp" href="assets/images/Favicon.webp" />
-
+    
     <!-- Meta/SEO -->
-    <meta
-      name="description"
-      content="Join our exclusive Healing Essence hypnotherapy retreat. Secure your spot today and begin your journey to pure inner peace and clarity."
-    />
-
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
+    <meta name="description" content="Ready to Unlock Deep Healing and Lasting Transformation? Experience powerful Clinical Hypnotherapy and Past Life Regression with Nagaraja Rao.">
+    
     <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL,GRAD,opsz@300,0,0,24&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL,GRAD,opsz@300,0,0,24&display=swap" rel="stylesheet">
+    
     <!-- AOS Animations -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="hypnotherapy.css">
+</head>
+<body>
 
-    <!-- Razorpay Checkout JS -->
-    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-
-    <script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              "soft-white": "#FFFFFF",
-              "off-white": "#F8FAFC",
-              "logo-orange": "#E88C30",
-              "logo-purple": "#8E44AD",
-              "logo-blue": "#2980B9",
-              "logo-green": "#27AE60",
-              "logo-yellow": "#F1C40F",
-              "logo-red": "#C0392B",
-              primary: "#E88C30",
-              "primary-light": "#F39C12",
-              "accent-blue": "#3498DB",
-            },
-            fontFamily: {
-              sans: ["Inter", "sans-serif"],
-              display: ["Outfit", "sans-serif"],
-            },
-            animation: {
-              "pulse-glow":
-                "pulse-glow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite",
-              float: "float 6s ease-in-out infinite",
-              "float-delayed": "float 6s ease-in-out 3s infinite",
-              "spin-slow": "spin 12s linear infinite",
-            },
-            keyframes: {
-              "pulse-glow": {
-                "0%, 100%": {
-                  transform: "scale(1)",
-                  boxShadow: "0 0 15px rgba(232, 140, 48, 0.4)",
-                },
-                "50%": {
-                  transform: "scale(1.02)",
-                  boxShadow: "0 0 35px rgba(243, 156, 18, 0.7)",
-                },
-              },
-              float: {
-                "0%, 100%": { transform: "translateY(0)" },
-                "50%": { transform: "translateY(-20px)" },
-              },
-              shimmer: {
-                "100%": { transform: "translateX(100%)" },
-              },
-              "float-soft": {
-                "0%, 100%": { transform: "translateY(0)" },
-                "50%": { transform: "translateY(-10px)" },
-              },
-            },
-          },
-        },
-      };
-    </script>
-  </head>
-  <body
-    class="text-slate-800 dark:text-slate-100 antialiased overflow-x-hidden"
-  >
-    <!-- Ambient Animated Background -->
-    <div class="ambient-bg">
-      <div class="ambient-orb orb-1"></div>
-      <div class="ambient-orb orb-2"></div>
-      <div class="ambient-orb orb-3"></div>
-      <div class="ambient-orb orb-4"></div>
-      <div class="ambient-orb orb-5"></div>
-    </div>
-
-    <!-- Navigation -->
-    <header
-      class="fixed top-0 w-full z-50 transition-all duration-300"
-      id="navbar"
-    >
-      <div
-        class="glass-panel mt-4 rounded-2xl px-6 py-2 mx-4 flex justify-between items-center transition-all duration-300"
-      >
-        <div class="flex items-center gap-3">
-          <img
-            src="assets/images/logo.png"
-            alt="Healing Essence Logo"
-            class="h-16 w-auto object-contain"
-          />
+    <!-- Header / Top Navigation -->
+    <header id="header">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="https://www.healingessence.in/">
+                    <img src="assets/images/logo.png" alt="Healing Essence Logo">
+                </a>
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#results" class="nav-link">Results</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            
+            <div class="header-cta">
+                <a href="#contact" class="btn btn-gold">
+                    <div class="shimmer"></div>
+                    <span>Book Your Consultation</span>
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                </a>
+            </div>
         </div>
-
-        <nav class="hidden md:flex items-center gap-8">
-          <a
-            href="#about"
-            class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-primary transition-colors"
-            >Event Details</a
-          >
-          <a
-            href="#facilitator"
-            class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-primary transition-colors"
-            >Facilitator</a
-          >
-          <a
-            href="#testimonials"
-            class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-primary transition-colors"
-            >Testimonials</a
-          >
-          <a
-            href="#agenda"
-            class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-primary transition-colors"
-            >Agenda</a
-          >
-          <a
-            href="#faqs"
-            class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-primary transition-colors"
-            >FAQs</a
-          >
-        </nav>
-
-        <div class="flex items-center gap-4">
-          <!-- Theme Toggle Button -->
-          <button
-            id="theme-toggle"
-            class="theme-toggle-btn"
-            aria-label="Toggle Theme"
-          >
-            <span id="sun-icon" class="material-symbols-outlined"
-              >light_mode</span
-            >
-            <span id="moon-icon" class="material-symbols-outlined hidden"
-              >dark_mode</span
-            >
-          </button>
-
-          <a
-            href="#register"
-            class="rounded-xl bg-gradient-to-r from-logo-orange to-logo-yellow px-6 py-2.5 text-sm font-semibold text-white shadow-lg shadow-logo-orange/30 hover:shadow-xl hover:shadow-logo-orange/40 transition-all hover:-translate-y-0.5"
-          >
-            Join Now
-          </a>
-        </div>
-      </div>
     </header>
 
-    <!-- Main Content -->
-    <main>
-      <!-- Hero Section -->
-      <section
-        class="relative min-h-[90vh] flex items-center pt-28 pb-16 lg:pt-32 lg:pb-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto"
-      >
-        <div
-          class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center w-full"
-        >
-          <!-- Image -->
-          <div
-            class="lg:col-span-7 z-10"
-            data-aos="fade-right"
-            data-aos-duration="1000"
-          >
-            <!-- <div class="mb-8" data-aos="zoom-in" data-aos-delay="200">
-              <img
-                src="assets/images/logo.png"
-                alt="Healing Essence"
-                class="h-24 w-auto object-contain drop-shadow-md logo-blen"
-              />
-            </div> -->
-            <div
-              class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-panel mb-8 border border-logo-orange/20"
-            >
-              <span class="relative flex h-3 w-3">
-                <span
-                  class="animate-ping absolute inline-flex h-full w-full rounded-full bg-logo-orange opacity-75"
-                ></span>
-                <span
-                  class="relative inline-flex rounded-full h-3 w-3 bg-logo-orange"
-                ></span>
-              </span>
-              <span
-                class="text-xs font-semibold uppercase tracking-wider text-logo-orange"
-                >Exclusive Wellness Retreat</span
-              >
-            </div>
-
-            <h1
-              class="text-5xl sm:text-6xl lg:text-7xl font-display font-black leading-[1.1] mb-6 tracking-tight text-slate-900 dark:text-white"
-            >
-              Find Your <br />
-              <span class="text-logo-orange drop-shadow-sm">Inner Peace</span>
-              &amp; <br />
-              Mental Clarity
-            </h1>
-
-            <p
-              class="text-lg sm:text-xl text-slate-600 mb-10 leading-relaxed max-w-2xl font-light"
-            >
-              Join our guided 3-day holistic journey designed to rejuvenate your
-              mind, body, and spirit through ancient wisdom and modern
-              mindfulness.
-            </p>
-
-            <p class="text-sm font-display italic text-slate-400 mb-8">
-              Transforming Minds ...Healing Lives...
-            </p>
-
-            <!-- <div class="flex flex-wrap items-center gap-6">
-              <div class="flex -space-x-4">
-                <img
-                  class="w-12 h-12 rounded-full border-2 border-white object-cover shadow-sm"
-                  src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=100&q=80"
-                  alt="Attendee"
-                />
-                <img
-                  class="w-12 h-12 rounded-full border-2 border-white object-cover shadow-sm"
-                  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=100&q=80"
-                  alt="Attendee"
-                />
-                <img
-                  class="w-12 h-12 rounded-full border-2 border-white object-cover shadow-sm"
-                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80"
-                  alt="Attendee"
-                />
-                <div
-                  class="flex items-center justify-center w-12 h-12 rounded-full border-2 border-white bg-slate-100 text-xs font-bold text-slate-600 shadow-sm z-10"
-                >
-                  +500
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">
+                <h1>Ready to Unlock Deep Healing and Lasting Transformation?</h1>
+                <p>Experience powerful Clinical Hypnotherapy and Past Life Regression to release emotional blocks, heal past patterns, and create the life you truly desire.</p>
+                
+                <div class="trust-bar">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <span>4.98/5 (187+ clients) | Trusted by professionals, healers & seekers across India</span>
                 </div>
-              </div>
-              <p class="text-sm font-medium text-slate-500 dark:text-slate-400">
-                Joined by 500+ seekers this month
-              </p>
-            </div> -->
-          </div>
-
-          <!-- Registration / Success Card Container -->
-          <div
-            class="lg:col-span-5 relative z-10"
-            id="register"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="200"
-          >
-            <!-- Form State -->
-            <div
-              id="registration-form-container"
-              class="glass-panel rounded-3xl p-8 sm:p-10 lg:p-7 relative overflow-hidden group"
-            >
-              <!-- Decorative gradient blob inside card -->
-              <div
-                class="absolute -top-24 -right-24 w-48 h-48 bg-primary/20 rounded-full blur-3xl group-hover:bg-primary/30 transition-all duration-700"
-              ></div>
-              <div
-                class="absolute -bottom-24 -left-24 w-48 h-48 bg-accent-blue/20 rounded-full blur-3xl group-hover:bg-accent-blue/30 transition-all duration-700"
-              ></div>
-
-              <div class="relative z-10">
-                <h3
-                  class="text-3xl lg:text-2xl font-display font-bold mb-2 text-slate-800 dark:text-white"
-                >
-                  Reserve Your Journey
-                </h3>
-                <p
-                  class="text-slate-500 dark:text-slate-400 text-sm mb-8 lg:mb-4 font-medium"
-                >
-                  Limited availability for the next session.
-                </p>
-
-                <form id="payment-form" class="space-y-4 lg:space-y-3">
-                  <div class="space-y-1.5">
-                    <label
-                      class="block text-xs font-bold uppercase tracking-wider text-slate-600 ml-1"
-                      >Full Name</label
-                    >
-                    <input
-                      id="reg-name"
-                      type="text"
-                      required
-                      placeholder="Nagaraja Rao"
-                      class="w-full px-5 py-4 lg:py-3 rounded-xl border border-slate-200/50 bg-white/50 backdrop-blur-sm focus:bg-white focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all text-slate-800 placeholder-slate-400 outline-none shadow-inner"
-                    />
-                  </div>
-                  <div class="space-y-1.5">
-                    <label
-                      class="block text-xs font-bold uppercase tracking-wider text-slate-600 ml-1"
-                      >Email Address</label
-                    >
-                    <input
-                      id="reg-email"
-                      type="email"
-                      required
-                      placeholder="nagaraja@example.com"
-                      class="w-full px-5 py-4 lg:py-3 rounded-xl border border-slate-200/50 bg-white/50 backdrop-blur-sm focus:bg-white focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all text-slate-800 placeholder-slate-400 outline-none shadow-inner"
-                    />
-                  </div>
-                  <div class="space-y-1.5">
-                    <label
-                      class="block text-xs font-bold uppercase tracking-wider text-slate-600 ml-1"
-                      >Phone Number</label
-                    >
-                    <input
-                      id="reg-phone"
-                      type="tel"
-                      required
-                      placeholder="+91 XXXXXXXXXX"
-                      class="w-full px-5 py-4 lg:py-3 rounded-xl border border-slate-200/50 bg-white/50 backdrop-blur-sm focus:bg-white focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all text-slate-800 placeholder-slate-400 outline-none shadow-inner"
-                    />
-                  </div>
-                  <div class="space-y-1.5">
-                    <label
-                      class="block text-xs font-bold uppercase tracking-wider text-slate-600 ml-1"
-                      >City</label
-                    >
-                    <input
-                      id="reg-city"
-                      type="text"
-                      required
-                      placeholder="Hyderabad"
-                      class="w-full px-5 py-4 rounded-xl border border-slate-200/50 bg-white/50 backdrop-blur-sm focus:bg-white focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all text-slate-800 placeholder-slate-400 outline-none shadow-inner"
-                    />
-                  </div>
-
-                  <button
-                    id="reg-submit"
-                    type="submit"
-                    class="group/btn relative w-full py-4 lg:py-4 bg-gradient-to-r from-logo-orange via-logo-yellow to-logo-orange bg-[length:200%_auto] hover:bg-right text-white font-display font-bold rounded-xl shadow-[0_8px_30px_rgb(232,140,48,0.3)] hover:shadow-[0_8px_40px_rgb(232,140,48,0.5)] hover:scale-[1.02] active:scale-[0.98] transition-all uppercase tracking-wider !mt-6 !lg:mt-6 animate-pulse-glow flex items-center justify-center gap-2 overflow-hidden disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:shadow-none"
-                   
-                  >
-                    <!-- Shimmer Layer -->
-                    <div class="absolute inset-0 -translate-x-full group-hover/btn:animate-[shimmer_1.5s_infinite] bg-gradient-to-r from-transparent via-white/30 to-transparent z-10"></div>
-                    
-                    <span class="relative z-20">Pay ₹99 To Start Your Journey</span>
-                    <span class="material-symbols-outlined text-sm relative z-20"
-                      >arrow_forward</span
-                    >
-                  </button>
-
-                  <div
-                    class="flex items-center justify-center gap-2 mt-4 text-xs font-medium text-slate-400"
-                  >
-                    <span class="material-symbols-outlined text-[16px]"
-                      >lock</span
-                    >
-                    <span>Secure processing via Razorpay</span>
-                  </div>
+            </div>
+            
+            <div class="hero-form-container" data-aos="fade-left" data-aos-duration="1000">
+                <h3>Get Your Personalized Consultation – Takes 30 Seconds</h3>
+                <form id="hero-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" class="form-input" required placeholder="Enter Your Full Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" class="form-input" required value="+91 ">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email ID</label>
+                        <input type="email" id="email" name="email" class="form-input" required placeholder="example@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" class="form-input" required placeholder="Your City">
+                    </div>
+                    <button type="submit" class="btn btn-gold w-full btn-large">
+                        <div class="shimmer"></div>
+                        <span>Submit & Book My Consultation Now</span>
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </button>
+                    <p class="form-note text-center">Your information is 100% private and secure.</p>
                 </form>
-              </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Success State (Hidden by default) -->
-            <div
-              id="success-container"
-              class="glass-panel rounded-3xl p-8 sm:p-12 relative overflow-hidden hidden flex-col items-center justify-center text-center min-h-[500px]"
-            >
-              <div
-                class="absolute inset-0 bg-gradient-to-br from-emerald-50/50 to-teal-50/50 z-0"
-              ></div>
-              <div class="relative z-10 flex flex-col items-center">
-                <!-- Animated Checkmark -->
-                <svg
-                  class="checkmark mb-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 52 52"
-                >
-                  <circle
-                    class="checkmark__circle"
-                    cx="26"
-                    cy="26"
-                    r="25"
-                    fill="none"
-                  />
-                  <path
-                    class="checkmark__check"
-                    fill="none"
-                    d="M14.1 27.2l7.1 7.2 16.7-16.8"
-                  />
-                </svg>
+    <!-- Intro Video Section -->
+    <section class="video-section" id="services">
+        <div class="container">
+            <h2 class="section-title text-center text-gold">Watch How Clinical Hypnotherapy & Past Life Regression Works</h2>
+            
+            <div class="video-grid grid ">
+                <div class="video-wrapper" data-aos="zoom-in">
+                    <!-- Placeholder Meditative Video -->
+                    <iframe 
+                        src="https://www.youtube.com/embed/H6Ctg33-G18?autoplay=1&mute=1&loop=1&playlist=H6Ctg33-G18" 
+                        title="Healing Essence Introduction" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="video-description" data-aos="fade-left">
+                    <p class="text-large">“See how clients have healed emotional wounds, released karmic patterns, and found profound peace in just a few sessions.”</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <h3
-                  class="text-3xl font-display font-black mb-4 text-slate-800"
-                >
-                  Payment Successful! <span class="text-3xl">🧘</span>
-                </h3>
-                <p
-                  class="text-slate-600 text-lg mb-8 leading-relaxed max-w-xs font-medium"
-                >
-                  Thank you for registering. Check your WhatsApp and Email for
-                  your exclusive join link. It's on its way!
-                </p>
+    <!-- Why Choose Us / Benefits Section -->
+    <section class="benefits-section" id="about">
+        <div class="container">
+            <h2 class="section-title text-center">Why Clients Trust Me for Clinical Hypnotherapy & Past Life Regression</h2>
+            
+            <div class="benefits-grid grid cols-2">
+                <div class="benefit-card glass-card" data-aos="fade-up">
+                    <span class="material-symbols-outlined benefit-icon">verified_user</span>
+                    <h3 class="text-gold">Safe, Professional & Evidence-Based Approach</h3>
+                    <p>Clinical Hypnotherapy is a scientifically supported method used worldwide to access the subconscious mind and create real, lasting change.</p>
+                </div>
+                
+                <div class="benefit-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                    <span class="material-symbols-outlined benefit-icon">psychology</span>
+                    <h3 class="text-gold">Past Life Regression for Deep Soul-Level Healing</h3>
+                    <p>Gently explore past-life experiences to release unexplained fears, phobias, relationship patterns, and emotional blocks that no other modality can reach.</p>
+                </div>
+                
+                <div class="benefit-card glass-card" data-aos="fade-up" data-aos-delay="200">
+                    <span class="material-symbols-outlined benefit-icon">tune</span>
+                    <h3 class="text-gold">Completely Personalized to You</h3>
+                    <p>Every session is tailored to your unique goals, life story, and city-specific lifestyle challenges.</p>
+                </div>
+                
+                <div class="benefit-card glass-card" data-aos="fade-up" data-aos-delay="300">
+                    <span class="material-symbols-outlined benefit-icon">lock</span>
+                    <h3 class="text-gold">Gentle, Supportive & Confidential</h3>
+                    <p>You remain fully in control at all times. Sessions are private, compassionate, and designed for your highest good.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <a
-                  href="/"
-                  class="px-8 py-3 rounded-xl bg-white text-slate-700 font-semibold shadow-sm border border-slate-200 hover:bg-slate-50 transition-colors"
-                >
-                  Return Home
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="results">
+        <div class="container">
+            <h2 class="section-title text-center">Real Stories of Transformation</h2>
+            
+            <div class="marquee-wrapper">
+                <div class="marquee-content">
+                    <!-- Original Items -->
+                    <div class="testimonial-card marquee-item glass-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">“After just two sessions of Past Life Regression, my lifelong fear of water completely disappeared. I feel lighter and freer than ever.”</p>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-avatar avatar-1">P</div>
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-name">Priya Sharma</span>
+                                <span class="testimonial-title">Software Engineer</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card marquee-item glass-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">“Clinical Hypnotherapy helped me break a 15-year anxiety pattern I couldn’t explain. I now sleep peacefully and feel in control of my life.”</p>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-avatar avatar-2">R</div>
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-name">Rajesh Rao</span>
+                                <span class="testimonial-title">Business Owner</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card marquee-item glass-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">“The Past Life Regression session revealed the root of my repeated relationship struggles. I finally understand and have healed it.”</p>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-avatar avatar-3">A</div>
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-name">Anika Mehra</span>
+                                <span class="testimonial-title">Educator</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card marquee-item glass-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">“Professional, deeply caring, and incredibly effective. This work changed my life in ways I never imagined possible.”</p>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-avatar avatar-4">V</div>
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-name">Vikram Singh</span>
+                                <span class="testimonial-title">Medical Professional</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Duplicated Items for Seamless Loop -->
+                    <div class="testimonial-card marquee-item glass-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">“After just two sessions of Past Life Regression, my lifelong fear of water completely disappeared. I feel lighter and freer than ever.”</p>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-avatar avatar-1">P</div>
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-name">Priya Sharma</span>
+                                <span class="testimonial-title">Software Engineer</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card marquee-item glass-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">“Clinical Hypnotherapy helped me break a 15-year anxiety pattern I couldn’t explain. I now sleep peacefully and feel in control of my life.”</p>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-avatar avatar-2">R</div>
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-name">Rajesh Rao</span>
+                                <span class="testimonial-title">Business Owner</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card marquee-item glass-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">“The Past Life Regression session revealed the root of my repeated relationship struggles. I finally understand and have healed it.”</p>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-avatar avatar-3">A</div>
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-name">Anika Mehra</span>
+                                <span class="testimonial-title">Educator</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card marquee-item glass-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">“Professional, deeply caring, and incredibly effective. This work changed my life in ways I never imagined possible.”</p>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-avatar avatar-4">V</div>
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-name">Vikram Singh</span>
+                                <span class="testimonial-title">Medical Professional</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Take Action Today -->
+    <section class="urgency-section">
+        <div class="container text-center">
+            <div class="urgency-content glass-card">
+                <h2 class="text-gold-bright">The Best Time to Start Is Now</h2>
+                <p class="text-white subtitle">Every day of delay keeps old patterns in place.</p>
+                
+                <div class="urgency-body">
+                    <p>The individuals who experience the fastest and most profound healing are the ones who take action today.</p>
+                    <p class="momentum-list">By submitting your details right now you will:</p>
+                    <ul class="text-left-list">
+                        <li>Receive a personal reply from me within 24 hours</li>
+                        <li>Get priority scheduling for your discovery call</li>
+                        <li>Start receiving your customized healing plan within 48 hours</li>
+                        <li>Begin building real momentum toward deep emotional freedom immediately</li>
+                    </ul>
+                    <p>I personally dedicate focused time each day to deliver high-quality, individualized Clinical Hypnotherapy and Past Life Regression sessions. The sooner you begin, the sooner you will start seeing real progress.</p>
+                </div>
+                
+                <a href="#contact" class="btn btn-gold btn-large">
+                    <div class="shimmer"></div>
+                    <span>Yes, I’m Ready – Book My Consultation Now</span>
+                    <span class="material-symbols-outlined">arrow_forward</span>
                 </a>
-              </div>
+                <p class="form-note text-center mt-20">Your healing depends on your commitment to follow through. I only work with clients who are ready to implement and embrace the process.</p>
             </div>
-          </div>
         </div>
-      </section>
+    </section>
 
-      <!-- Event Details Section -->
-      <section id="about" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
-          <span
-            class="text-primary font-bold tracking-widest uppercase text-sm mb-2 block"
-            >The Experience</span
-          >
-          <h2
-            class="text-4xl md:text-5xl font-display font-black text-slate-900 dark:text-white mb-6"
-          >
-            Event Details
-          </h2>
-          <p class="text-lg text-slate-500 dark:text-slate-400 font-light">
-            Everything you need to know about the upcoming Healing Essence
-            virtual sanctuary.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <!-- Left Column: Video -->
-          <div data-aos="fade-right">
-            <div
-              class="video-container glass-panel border border-primary/10 shadow-lg !mt-0"
-            >
-              <iframe
-                src="https://www.youtube.com/embed/H6Ctg33-G18?si=3xaXHHE7WS-NmFh5"
-                title="Healing Essence Event Feature"
-                allow="
-                  accelerometer;
-                  autoplay;
-                  clipboard-write;
-                  encrypted-media;
-                  gyroscope;
-                  picture-in-picture;
-                  web-share;
-                "
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              >
-              </iframe>
-            </div>
-          </div>
-
-          <!-- Right Column: Event Info -->
-          <div class="space-y-6" data-aos="fade-left">
-            <!-- Date -->
-            <div
-              class="glass-panel rounded-2xl p-6 flex items-start gap-4 hover:bg-white/10 transition-colors"
-            >
-              <div
-                class="h-12 w-12 rounded-xl bg-logo-orange/10 flex items-center justify-center text-logo-orange flex-shrink-0"
-              >
-                <span class="material-symbols-outlined">calendar_month</span>
-              </div>
-              <div>
-                <h4 class="text-lg font-bold text-slate-900 dark:text-white">
-                  Date & Time
-                </h4>
-                <p class="text-slate-600 dark:text-slate-400">
-                  Oct 25 - 27, 2023
-                </p>
-                <p class="text-xs text-slate-500 font-medium">
-                  10:00 AM - 1:00 PM IST Daily
-                </p>
-              </div>
-            </div>
-
-            <!-- Location -->
-            <div
-              class="glass-panel rounded-2xl p-6 flex items-start gap-4 hover:bg-white/10 transition-colors"
-            >
-              <div
-                class="h-12 w-12 rounded-xl bg-logo-blue/10 flex items-center justify-center text-logo-blue flex-shrink-0"
-              >
-                <span class="material-symbols-outlined">location_on</span>
-              </div>
-              <div>
-                <h4 class="text-lg font-bold text-slate-900 dark:text-white">
-                  Location
-                </h4>
-                <p class="text-slate-600 dark:text-slate-400">
-                  Online Sanctuary (Zoom)
-                </p>
-                <p class="text-xs text-slate-500 font-medium">
-                  Accessible anytime, anywhere
-                </p>
-              </div>
-            </div>
-
-            <!-- What's Included -->
-            <div
-              class="glass-panel rounded-2xl p-6 flex items-start gap-4 hover:bg-white/10 transition-colors"
-            >
-              <div
-                class="h-12 w-12 rounded-xl bg-logo-purple/10 flex items-center justify-center text-logo-purple flex-shrink-0"
-              >
-                <span class="material-symbols-outlined"
-                  >featured_play_list</span
-                >
-              </div>
-              <div>
-                <h4 class="text-lg font-bold text-slate-900 dark:text-white">
-                  What's Included
-                </h4>
-                <ul
-                  class="text-sm text-slate-600 dark:text-slate-400 list-disc list-inside space-y-1"
-                >
-                  <li>Detailed Digital Workbook</li>
-                  <li>Recorded Healing Meditations</li>
-                  <li>Lifetime Community Access</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Facilitator Section -->
-      <section id="facilitator" class="py-24 relative">
-        <div
-          class="absolute inset-0 bg-gradient-to-b from-transparent to-white/10 z-0 pointer-events-none"
-        ></div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div
-            class="glass-panel rounded-[2.5rem] p-8 md:p-16 border border-white/20"
-          >
-            <div class="flex flex-col lg:flex-row items-center gap-16">
-              <!-- Image -->
-              <div class="w-full lg:w-5/12 relative" data-aos="fade-right">
-                <!-- <div
-                  class="absolute -inset-4 bg-gradient-to-tr from-logo-orange to-logo-yellow rounded-[2.5rem] opacity-20 blur-2xl"
-                ></div> -->
-                <img
-                  src="assets/images/nagaraj-removebg.png"
-                  alt="D. Nagaraja Rao"
-                  class="w-full aspect-[4/5] object-cover rounded-[2rem] shadow-2xl relative z-10 p-4"
-                />
-                <div
-                  class="absolute animate-float-delayed -bottom-6 -right-6 glass-panel rounded-2xl p-4 shadow-xl z-20 flex items-center gap-3"
-                >
-                  <span
-                    class="material-symbols-outlined text-4xl text-logo-orange drop-shadow-sm"
-                    >verified</span
-                  >
-                  <div>
-                    <p
-                      class="font-display font-bold text-slate-800 dark:text-white lead-none"
-                    >
-                      25+ Years
-                    </p>
-                    <p class="text-xs text-slate-500 font-medium">Expertise</p>
-                  </div>
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title text-center">Your Healing Journey – Simple, Clear & Supportive</h2>
+            
+            <div class="steps-grid grid cols-4">
+                <div class="step-card text-center" data-aos="fade-up">
+                    <span class="material-symbols-outlined step-icon">edit_note</span>
+                    <div class="step-number text-gold">1</div>
+                    <p>Submit Your Details → Instant confirmation</p>
                 </div>
-              </div>
-
-              <!-- Content -->
-              <div class="w-full lg:w-7/12" data-aos="fade-left">
-                <span
-                  class="text-logo-orange font-bold uppercase tracking-widest text-sm mb-3 block"
-                  >Meet Our Founder & Your Guide</span
-                >
-                <h2
-                  class="text-4xl md:text-5xl font-display font-black text-slate-900 dark:text-white mb-6"
-                >
-                  D. Nagaraja Rao
-                </h2>
-
-                <div class="bio-container relative mb-8">
-                  <div
-                    id="facilitator-bio"
-                    class="bio-wrapper text-lg text-slate-600 dark:text-slate-400 leading-relaxed font-light"
-                  >
-                    <p class="mb-4">
-                      At Healing Essence, we are dedicated to harnessing the
-                      incredible power of the mind and spirit to heal,
-                      transform, and help individuals realize their fullest
-                      potential.
-                    </p>
-                    <p class="mb-4">
-                      Founded by <strong>D. Nagaraja Rao</strong>, our practice
-                      specializes in Hypno-Healing and Past Life Regression
-                      (PLR). With over 25 years of experience in the IT
-                      industry, Mr. Rao has held prominent Senior Management
-                      roles contributing his expertise to multiple renowned
-                      organizations.
-                    </p>
-                    <p class="mb-4">
-                      His journey into the world of healing is deeply rooted in
-                      a passion for empowering others and fostering personal
-                      transformation. Our mission is to make this knowledge
-                      reachable to everyone.
-                    </p>
-                    <p>
-                      With over 15 years of experience in providing training and
-                      coaching, our services are designed to help you access
-                      your inner wisdom, release emotional blockages, and
-                      uncover the root causes of life’s challenges.
-                    </p>
-                    <div class="bio-gradient"></div>
-                  </div>
-                  <button id="bio-toggle" class="read-more-btn">
-                    <span>Read Full Story</span>
-                    <span
-                      class="material-symbols-outlined text-sm transition-transform duration-300"
-                      >expand_more</span
-                    >
-                  </button>
+                <div class="step-card text-center" data-aos="fade-up" data-aos-delay="100">
+                    <span class="material-symbols-outlined step-icon">call</span>
+                    <div class="step-number text-gold">2</div>
+                    <p>Personalized Discovery Call (15 minutes)</p>
                 </div>
+                <div class="step-card text-center" data-aos="fade-up" data-aos-delay="200">
+                    <span class="material-symbols-outlined step-icon">assignment</span>
+                    <div class="step-number text-gold">3</div>
+                    <p>Receive Your Custom Session Plan within 48 hours</p>
+                </div>
+                <div class="step-card text-center" data-aos="fade-up" data-aos-delay="300">
+                    <span class="material-symbols-outlined step-icon">self_care</span>
+                    <div class="step-number text-gold">4</div>
+                    <p>Begin Your Healing Sessions and experience transformation</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <ul class="space-y-4 mb-8">
-                  <li class="flex items-center gap-3">
-                    <span class="material-symbols-outlined text-logo-orange"
-                      >check_circle</span
-                    >
-                    <span class="font-medium text-slate-700 dark:text-slate-300"
-                      >25+ Years IT Senior Management Experience</span
-                    >
-                  </li>
-                  <li class="flex items-center gap-3">
-                    <span class="material-symbols-outlined text-logo-purple"
-                      >check_circle</span
-                    >
-                    <span class="font-medium text-slate-700 dark:text-slate-300"
-                      >15+ Years Training & Coaching Expertise</span
-                    >
-                  </li>
-                  <li class="flex items-center gap-3">
-                    <span class="material-symbols-outlined text-logo-blue"
-                      >check_circle</span
-                    >
-                    <span class="font-medium text-slate-700 dark:text-slate-300"
-                      >Specialist in Hypno-Healing & PLR</span
-                    >
-                  </li>
-                </ul>
-                <div class="flex flex-col sm:flex-row items-center gap-6">
-                  <!-- IPHM Accreditation Badge -->
-                  <div
-                    class="p-6 glass-panel rounded-2xl border border-primary/10 inline-flex items-center gap-6 cursor-pointer hover:bg-white/10 transition-all duration-300 group"
-                    id="view-certificate"
-                  >
-                    <div
-                      class="h-16 w-16 flex-shrink-0 bg-white/10 rounded-xl p-2 flex items-center justify-center"
-                    >
-                      <span
-                        class="material-symbols-outlined text-4xl text-logo-orange group-hover:scale-110 transition-transform"
-                        >workspace_premium</span
-                      >
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="gold-divider"></div>
+            <h2 class="section-title text-center">Frequently Asked Questions</h2>
+            
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <button class="faq-question">What is Clinical Hypnotherapy?</button>
+                    <div class="faq-answer">
+                        <p>Clinical Hypnotherapy is a safe, evidence-based therapeutic modality that uses guided hypnosis to access the subconscious mind. In a deeply relaxed yet fully aware state, we gently identify and transform the root causes of emotional blocks, limiting beliefs, anxiety, phobias, and unwanted patterns. It is recognized by leading health organizations worldwide and has been used effectively for decades to support personal growth, stress reduction, and lasting behavioral change. Unlike stage hypnosis, you remain in complete control throughout the session.</p>
                     </div>
-                    <div>
-                      <p
-                        class="text-xs font-bold uppercase tracking-widest text-logo-orange mb-1"
-                      >
-                        Accredited by
-                      </p>
-                      <p
-                        class="text-lg font-bold text-slate-900 dark:text-white leading-tight"
-                      >
-                        IPHM Training Provider
-                      </p>
-                      <p
-                        class="text-sm text-slate-500 font-medium mt-1 underline underline-offset-4 decoration-primary/30 group-hover:decoration-primary transition-all"
-                      >
-                        Click to view certificate
-                      </p>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">What illnesses or conditions can Clinical Hypnotherapy help with?</button>
+                    <div class="faq-answer">
+                        <p>Clinical Hypnotherapy works by guiding the mind into a deeply relaxed state, allowing direct access to the subconscious where emotions, habits, and automatic body responses are stored. In this state we can release stored stress and reframe limiting patterns, activating the body’s natural healing responses. It is not a replacement for medical treatment but can effectively support common stress-related and psychosomatic conditions such as anxiety, panic attacks, insomnia, migraines, IBS, phobias, smoking cessation, and chronic emotional blocks linked to pain or weight issues. Results depend on your commitment to follow through. We will discuss your specific concern during the discovery call.</p>
                     </div>
-                  </div>
-
-                  <!-- <a
-                    href="#register"
-                    class="inline-flex items-center gap-2 text-logo-orange font-bold hover:text-logo-red transition-colors group px-6 py-3 rounded-xl border-2 border-logo-orange"
-                  >
-                    Begin your transformation
-                    <span
-                      class="material-symbols-outlined group-hover:translate-x-1 transition-transform"
-                      >arrow_forward</span
-                    >
-                  </a> -->
                 </div>
-              </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">How does Past Life Regression work?</button>
+                    <div class="faq-answer">
+                        <p>Past Life Regression is a specialized form of clinical hypnosis that gently guides you to explore subconscious memories and experiences that may be influencing your present life. Using deep relaxation techniques, we create a safe space for you to recall and understand past-life or significant subconscious events that could be at the root of unexplained fears, relationship patterns, emotional blocks, or recurring challenges. The process is never forced — you remain fully aware and in control. Many clients experience profound clarity, emotional release, and healing once these deeper layers are gently addressed.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">Is this safe?</button>
+                    <div class="faq-answer">
+                        <p>Yes, Clinical Hypnotherapy and Past Life Regression are extremely safe when practiced by a trained and experienced professional. You remain conscious and in full control at all times; the process simply helps you access your own inner wisdom in a relaxed state. There are no drugs, no invasive techniques, and no risk of “getting stuck.” I only work with clients who feel comfortable and ready, and we move at a pace that feels right for you. Thousands of people worldwide benefit from these modalities every day with positive, life-enhancing results.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">How many sessions will I need?</button>
+                    <div class="faq-answer">
+                        <p>The number of sessions varies from person to person depending on your specific goals and how deeply rooted the patterns are. Most clients experience meaningful shifts within 3 to 6 sessions, while some achieve their desired outcomes in fewer. During our initial discovery call, I will give you a clear, personalized recommendation based on your unique situation. Your active participation and commitment to the process play a key role in how quickly and effectively you experience results.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">Do you work with clients from any city?</button>
+                    <div class="faq-answer">
+                        <p>Yes. While I am based in Hyderabad, I work with clients from across India and internationally through secure online video sessions. The effectiveness of Clinical Hypnotherapy and Past Life Regression is the same whether we meet in person or virtually. Many clients from different cities find the online format even more convenient and comfortable. Simply mention your city when you submit the form and we will schedule the session at a time that suits your time zone.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">What if I’m not sure this is right for me?</button>
+                    <div class="faq-answer">
+                        <p>That is completely normal and understandable. Many people feel curious yet hesitant before their first session. That is exactly why I offer a short, no-pressure discovery call — so we can explore your goals, answer all your questions, and determine together whether this approach feels like the right fit for you. There is never any obligation to proceed. My priority is that you feel fully informed and comfortable before making any decision.</p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </section>
-      <!-- Testimonials Section -->
-      <section id="testimonials" class="mx-auto">
-        <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
-          <span
-            class="text-primary font-bold tracking-widest uppercase text-sm mb-2 block"
-            >Voices of Transformation</span
-          >
-          <h2
-            class="text-4xl md:text-5xl font-display font-black text-slate-900 dark:text-white mb-6"
-          >
-            Life-Changing Experiences
-          </h2>
-          <p class="text-lg text-slate-500 dark:text-slate-400 font-light">
-            Hear from those who have already started their journey with us.
-          </p>
+    </section>
+
+    <!-- Final Lead Capture Section -->
+    <section class="final-cta" id="contact">
+        <div class="container grid cols-2 items-center">
+            <div class="final-cta-text" data-aos="fade-right">
+                <h2 class="section-title text-gold">Ready to Begin Your Healing Journey?</h2>
+                <p class="subtitle">Take the first step today – your transformation starts here.</p>
+            </div>
+            
+            <div class="hero-form-container" data-aos="fade-left">
+                <form id="final-form">
+                    <div class="form-group">
+                        <label for="f-name">Full Name *</label>
+                        <input type="text" id="f-name" name="name" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="f-phone">Phone Number *</label>
+                        <input type="tel" id="f-phone" name="phone" class="form-input" required value="+91 ">
+                    </div>
+                    <div class="form-group">
+                        <label for="f-email">Email ID *</label>
+                        <input type="email" id="f-email" name="email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="f-city">City *</label>
+                        <input type="text" id="f-city" name="city" class="form-input" required>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-gold w-full btn-large">
+                        <div class="shimmer"></div>
+                        <span>Submit & Book My Consultation Now</span>
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </button>
+                     <p class="form-note text-center">Your information is 100% private and secure.</p>
+                </form>
+            </div>
         </div>
+    </section>
 
-        <div class="testimonials-marquee-container" data-aos="fade-up">
-          <div class="testimonials-marquee-track">
-            <!-- Testimonial 1: Dr. Deepali -->
-            <div
-              class="testimonial-card-marquee glass-panel p-8 rounded-2xl border border-primary/5 italic glass-card-hover"
-            >
-              <div class="flex text-primary mb-4">
-                <span class="material-symbols-outlined text-[18px]">star</span>
-                <span class="material-symbols-outlined text-[18px]">star</span>
-                <span class="material-symbols-outlined text-[18px]">star</span>
-                <span class="material-symbols-outlined text-[18px]">star</span>
-                <span class="material-symbols-outlined text-[18px]">star</span>
-              </div>
-              <p
-                class="text-slate-600 dark:text-slate-300 mb-6 font-light text-sm leading-relaxed"
-              >
-                "Namaskaram everyone🌸 My name is Dr. Deepali and I did 2
-                sessions with Nagaraja Rao sir and it was a very healing
-                experience. I have noticed karmic patterns for 15 years... I did
-                inner child healing and Past Life Regression. It gave me fair
-                insight and helped me shift from 'victimization stage' to being
-                'responsible' for everything. Mind boggling experience!🌸"
-              </p>
-              <div class="flex items-center gap-4">
-                <div
-                  class="h-10 w-10 rounded-full bg-gradient-to-tr from-logo-purple to-logo-red flex items-center justify-center text-white font-bold shadow-sm"
-                >
-                  DD
-                </div>
-                <div>
-                  <p
-                    class="font-bold not-italic text-sm text-slate-800 dark:text-slate-200"
-                  >
-                    Dr. Deepali
-                  </p>
-                  <p class="text-xs text-slate-500 not-italic">
-                    Healing Participant
-                  </p>
-                </div>
-              </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <div class="footer-info">
+                 <div class="logo">
+                <a href="https://www.healingessence.in/">
+                    <img src="assets/images/logo.png" alt="Healing Essence Logo">
+                </a>
             </div>
-
-            <!-- Testimonial 2: Sravya -->
-            <div
-              class="testimonial-card-marquee glass-panel p-8 rounded-2xl border border-primary/5 italic glass-card-hover"
-            >
-              <div class="flex text-primary mb-4">
-                <span class="material-symbols-outlined text-[18px]">star</span>
-                <span class="material-symbols-outlined text-[18px]">star</span>
-                <span class="material-symbols-outlined text-[18px]">star</span>
-                <span class="material-symbols-outlined text-[18px]">star</span>
-                <span class="material-symbols-outlined text-[18px]">star</span>
-              </div>
-              <p
-                class="text-slate-600 dark:text-slate-300 mb-6 font-light text-sm leading-relaxed"
-              >
-                "The Past Life Regression session with Mr. Rao was a revelation.
-                It helped me understand deep-seated patterns and brought a level
-                of clarity I never thought possible. His guidance is gentle yet
-                profound."
-              </p>
-              <div class="flex items-center gap-4">
-                <div
-                  class="h-10 w-10 rounded-full bg-gradient-to-tr from-logo-orange to-logo-yellow flex items-center justify-center text-white font-bold shadow-sm"
-                >
-                  S
-                </div>
-                <div>
-                  <p
-                    class="font-bold not-italic text-sm text-slate-800 dark:text-slate-200"
-                  >
-                    Sravya
-                  </p>
-                  <p class="text-xs text-slate-500 not-italic">
-                    Healing Participant
-                  </p>
-                </div>
-              </div>
+                <p>Copyright &copy; 2026 Healing essence</p>
+                <p>7780729577 | healingessencehyd@gmail.com</p>
+                <p class="footer-tagline italic">“Healing the mind, body & soul through Clinical Hypnotherapy & Past Life Regression”</p>
             </div>
+        </div>
+    </footer>
 
-            <!-- Testimonial 3: Diwakar -->
-            <div
-              class="testimonial-card-marquee glass-panel p-8 rounded-2xl border border-primary/5 italic glass-card-hover"
-            >
-              <div class="flex text-primary mb-4">
-                <span class="material-symbols-outlined text-[18px]">star</span>
-                <span class="material-symbols-outlined text-[18px]">star</span>
-                <span class="material-symbols-outlined text-[18px]">star</span>
-                <span class="material-symbols-outlined text-[18px]">star</span>
-                <span class="material-symbols-outlined text-[18px]">star</span>
-              </div>
-              <p
-                class="text-slate-600 dark:text-slate-300 mb-6 font-light text-sm leading-relaxed"
-              >
-                "Coming from a high-stress professional background, I resonated
-                with Mr. Rao's structured approach. The Inner Child healing
-                session was transformative for my mental health and overall
-                well-being."
-              </p>
-              <div class="flex items-center gap-4">
-                <div
-                  class="h-10 w-10 rounded-full bg-gradient-to-tr from-logo-blue to-logo-purple flex items-center justify-center text-white font-bold shadow-sm"
-                >
-                  D
-                </div>
-                <div>
-                  <p
-                    class="font-bold not-italic text-sm text-slate-800 dark:text-slate-200"
-                  >
-                    Diwakar
-                  </p>
-                  <p class="text-xs text-slate-500 not-italic">
-                    Corporate Professional
-                  </p>
-                </div>
-              </div>
-            </div>
+    <!-- Success Modal -->
+    <div id="success-modal" class="modal-overlay">
+        <div class="modal-content glass-card">
+            <span class="material-symbols-outlined modal-icon text-gold">check_circle</span>
+            <h3 class="text-gold">Submission Successful!</h3>
+            <p>Thank you for reaching out. We have received your details and will contact you soon to schedule your discovery call.</p>
+            <button class="btn btn-gold modal-close">Got it</button>
+        </div>
+    </div>
 
-            <!-- Testimonial 4: Aravind -->
-            <div
-              class="testimonial-card-marquee glass-panel p-8 rounded-2xl border border-primary/5 italic glass-card-hover"
-            >
-              <div class="flex text-primary mb-4">
-                <span class="material-symbols-outlined text-[18px]">star</span>
-                <span class="material-symbols-outlined text-[18px]">star</span>
-                <span class="material-symbols-outlined text-[18px]">star</span>
-                <span class="material-symbols-outlined text-[18px]">star</span>
-                <span class="material-symbols-outlined text-[18px]">star</span>
-              </div>
-              <p
-                class="text-slate-600 dark:text-slate-300 mb-6 font-light text-sm leading-relaxed"
-              >
-                "Hypno-Healing at Healing Essence reached the root causes of my
-                anxiety. Mr. Rao has a way of making you feel safe and
-                understood from the very first minute. Simply life-changing
-                experience."
-              </p>
-              <div class="flex items-center gap-4">
-                <div
-                  class="h-10 w-10 rounded-full bg-gradient-to-tr from-logo-green to-logo-blue flex items-center justify-center text-white font-bold shadow-sm"
-                >
-                  A
-                </div>
-                <div>
-                  <p
-                    class="font-bold not-italic text-sm text-slate-800 dark:text-slate-200"
-                  >
-                    Aravind
-                  </p>
-                  <p class="text-xs text-slate-500 not-italic">Entrepreneur</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- DUPLICATES FOR INFINITE LOOP -->
-            <!-- Testimonial 1: Dr. Deepali -->
-            <div
-              class="testimonial-card-marquee glass-panel p-8 rounded-2xl border border-primary/5 italic glass-card-hover"
-            >
-              <div class="flex text-primary mb-4">
-                <span class="material-symbols-outlined text-[18px]">star</span>
-                <span class="material-symbols-outlined text-[18px]">star</span>
-                <span class="material-symbols-outlined text-[18px]">star</span>
-                <span class="material-symbols-outlined text-[18px]">star</span>
-                <span class="material-symbols-outlined text-[18px]">star</span>
-              </div>
-              <p
-                class="text-slate-600 dark:text-slate-300 mb-6 font-light text-sm leading-relaxed"
-              >
-                "Namaskaram everyone🌸 My name is Dr. Deepali and I did 2
-                sessions with Nagaraja Rao sir and it was a very healing
-                experience. I have noticed karmic patterns for 15 years... I did
-                inner child healing and Past Life Regression. It gave me fair
-                insight and helped me shift from 'victimization stage' to being
-                'responsible' for everything. Mind boggling experience!🌸"
-              </p>
-              <div class="flex items-center gap-4">
-                <div
-                  class="h-10 w-10 rounded-full bg-gradient-to-tr from-logo-purple to-logo-red flex items-center justify-center text-white font-bold shadow-sm"
-                >
-                  DD
-                </div>
-                <div>
-                  <p
-                    class="font-bold not-italic text-sm text-slate-800 dark:text-slate-200"
-                  >
-                    Dr. Deepali
-                  </p>
-                  <p class="text-xs text-slate-500 not-italic">
-                    Healing Participant
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Testimonial 2: Sravya -->
-            <div
-              class="testimonial-card-marquee glass-panel p-8 rounded-2xl border border-primary/5 italic glass-card-hover"
-            >
-              <div class="flex text-primary mb-4">
-                <span class="material-symbols-outlined text-[18px]">star</span>
-                <span class="material-symbols-outlined text-[18px]">star</span>
-                <span class="material-symbols-outlined text-[18px]">star</span>
-                <span class="material-symbols-outlined text-[18px]">star</span>
-                <span class="material-symbols-outlined text-[18px]">star</span>
-              </div>
-              <p
-                class="text-slate-600 dark:text-slate-300 mb-6 font-light text-sm leading-relaxed"
-              >
-                "The Past Life Regression session with Mr. Rao was a revelation.
-                It helped me understand deep-seated patterns and brought a level
-                of clarity I never thought possible. His guidance is gentle yet
-                profound."
-              </p>
-              <div class="flex items-center gap-4">
-                <div
-                  class="h-10 w-10 rounded-full bg-gradient-to-tr from-logo-orange to-logo-yellow flex items-center justify-center text-white font-bold shadow-sm"
-                >
-                  S
-                </div>
-                <div>
-                  <p
-                    class="font-bold not-italic text-sm text-slate-800 dark:text-slate-200"
-                  >
-                    Sravya
-                  </p>
-                  <p class="text-xs text-slate-500 not-italic">
-                    Healing Participant
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Testimonial 3: Diwakar -->
-            <div
-              class="testimonial-card-marquee glass-panel p-8 rounded-2xl border border-primary/5 italic glass-card-hover"
-            >
-              <div class="flex text-primary mb-4">
-                <span class="material-symbols-outlined text-[18px]">star</span>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="hypnotherapy.js"></script>
+</body>
+</html>
+r</span>
                 <span class="material-symbols-outlined text-[18px]">star</span>
                 <span class="material-symbols-outlined text-[18px]">star</span>
                 <span class="material-symbols-outlined text-[18px]">star</span>
@@ -1458,11 +930,13 @@
     >
       <div class="max-w-7xl mx-auto px-4 flex flex-col items-center">
         <div class="mb-4 opacity-80 hover:opacity-100 transition-opacity">
+          <a href="https://www.healingessence.in/">
           <img
             src="assets/images/logo.png"
             alt="Healing Essence Logo"
             class="h-10 w-auto object-contain mx-auto"
           />
+          </a>
         </div>
         <p class="text-sm text-slate-500 mb-6 max-w-sm">
           Elevate your mind, body, and soul. Your journey into serenity starts
