@@ -5,6 +5,23 @@ AOS.init({
     offset: 100
 });
 
+// Mobile Menu Toggle
+const menuToggle = document.getElementById('menu-toggle');
+const navMenu = document.getElementById('nav-menu');
+const navOverlay = document.getElementById('nav-overlay');
+
+if (menuToggle && navMenu && navOverlay) {
+    const toggleMenu = () => {
+        menuToggle.classList.toggle('active');
+        navMenu.classList.toggle('active');
+        navOverlay.classList.toggle('active');
+        document.body.classList.toggle('no-scroll');
+    };
+
+    menuToggle.addEventListener('click', toggleMenu);
+    navOverlay.addEventListener('click', toggleMenu);
+}
+
 // Sticky Header Logic
 const header = document.getElementById('header');
 window.addEventListener('scroll', () => {
@@ -150,6 +167,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         
         const targetElement = document.querySelector(targetId);
         if (targetElement) {
+            // Close mobile menu if open
+            if (navMenu.classList.contains('active')) {
+                menuToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+                navOverlay.classList.remove('active');
+                document.body.classList.remove('no-scroll');
+            }
+
             window.scrollTo({
                 top: targetElement.offsetTop - 80,
                 behavior: 'smooth'

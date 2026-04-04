@@ -24,6 +24,13 @@
     --transition-base: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media (max-width: 768px) {
+    :root {
+        --header-height: 70px;
+        --section-padding: 60px;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -36,6 +43,10 @@ body {
     color: var(--white-soft);
     line-height: 1.6;
     overflow-x: hidden;
+}
+
+body.no-scroll {
+    overflow: hidden;
 }
 
 h1, h2, h3, h4, .font-display {
@@ -184,6 +195,13 @@ section {
     color: var(--gold-primary);
 }
 
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+}
+
 .section-subtitle {
     font-size: 1.1rem;
     color: var(--text-muted);
@@ -241,6 +259,120 @@ header.scrolled {
     color: var(--gold-primary);
 }
 
+@media (max-width: 991px) {
+    header {
+        height: 70px;
+    }
+    .logo img {
+        height: 40px;
+    }
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1001;
+}
+
+.hamburger {
+    display: block;
+    width: 28px;
+    height: 2px;
+    background: var(--gold-primary);
+    position: relative;
+    transition: var(--transition-base);
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    background: var(--gold-primary);
+    transition: var(--transition-base);
+}
+
+.hamburger::before { top: -8px; }
+.hamburger::after { bottom: 8px; }
+
+.menu-toggle.active .hamburger { background: transparent; }
+.menu-toggle.active .hamburger::before { transform: rotate(45deg); top: 0; }
+.menu-toggle.active .hamburger::after { transform: rotate(-45deg); bottom: 0; }
+
+@media (max-width: 991px) {
+    .menu-toggle { display: block; }
+    
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 400px;
+        height: 100vh;
+        background: var(--navy-card);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+        padding-top: 60px;
+        transition: 0.5s ease;
+        box-shadow: -10px 0 30px rgba(0,0,0,0.5);
+        z-index: 1000;
+    }
+    
+    .nav-menu.active { right: 0; }
+    
+    .header-cta { display: none; }
+    
+    .nav-link {
+        font-size: 1.5rem;
+        font-family: 'Outfit', sans-serif;
+        color: var(--white);
+    }
+    
+    .mobile-cta {
+        display: block;
+        width: 100%;
+        padding: 0 40px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .mobile-cta .btn {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .mobile-cta { display: none; }
+}
+
+/* Nav Overlay / Backdrop */
+.nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 25, 47, 0.7);
+    backdrop-filter: blur(4px);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition-base);
+}
+
+.nav-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
 /* Hero Section */
 .hero {
     min-height: 100vh;
@@ -280,6 +412,38 @@ header.scrolled {
     color: var(--gold-primary);
 }
 
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+        margin-bottom: 20px;
+        max-width: 90%;
+        margin-left: auto;
+        margin-top: 50px;
+        margin-right: auto;
+    }
+    
+    .hero-text p {
+        font-size: 0.95rem;
+        margin-bottom: 25px;
+        max-width: 100%;
+    }
+    
+    .hero {
+        background-position: center;
+        padding-top: calc(var(--header-height) + 40px);
+        padding-bottom: 60px;
+        min-height: auto;
+    }
+    
+    .trust-bar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
 .hero-text p {
     font-size: 1.25rem;
     color: var(--white-soft);
@@ -307,6 +471,16 @@ header.scrolled {
     padding: 40px;
     border: 1px solid rgba(197, 160, 33, 0.3);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 480px) {
+    .hero-form-container {
+        padding: 25px 20px;
+    }
+    
+    .hero-form-container h3 {
+        font-size: 1.25rem;
+    }
 }
 
 .hero-form-container h3 {
@@ -357,6 +531,16 @@ header.scrolled {
     justify-content: center;
     gap: 40px;
     margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .video-grid {
+        gap: 20px;
+    }
+    
+    .video-description {
+        font-size: 1rem;
+    }
 }
 
 .video-wrapper {
@@ -523,6 +707,13 @@ header.scrolled {
     transition: var(--transition-base);
 }
 
+@media (max-width: 768px) {
+    .faq-question {
+        font-size: 1rem;
+        padding: 20px 0;
+    }
+}
+
 .faq-question:hover {
     color: var(--gold-primary);
 }
@@ -571,6 +762,16 @@ footer {
     border-top: 1px solid rgba(197, 160, 33, 0.1);
 }
 
+@media (max-width: 768px) {
+    footer {
+        padding: 40px 0;
+    }
+    
+    .footer-info p {
+        font-size: 0.85rem;
+    }
+}
+
 .footer-info p {
     margin-bottom: 10px;
     color: var(--text-muted);
@@ -615,6 +816,13 @@ footer {
     flex-direction: column;
     gap: 20px;
     flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .testimonial-card.marquee-item {
+        width: 300px;
+        padding: 20px;
+    }
 }
 
 @keyframes marquee {
@@ -693,10 +901,23 @@ footer {
 @media (max-width: 768px) {
     .cols-2, .cols-4 { grid-template-columns: 1fr; }
     .hero-text h1 { font-size: 2.2rem; }
-    .section-title { font-size: 2rem; }
+    .section-title { font-size: 1.8rem; } /* Already added above, but keep consistent */
     .final-cta .container { grid-template-columns: 1fr; text-align: center; }
     .final-cta .section-title { text-align: center; }
     .marquee-content { animation-duration: 30s; }
+    
+    .step-card {
+        padding: 20px;
+        background: rgba(17, 34, 64, 0.5);
+        border-radius: 12px;
+        margin-bottom: 30px; /* Space between steps when stacked */
+    }
+    
+    .step-number {
+        right: 10px;
+        top: -10px;
+        font-size: 4rem;
+    }
 }
 
 /* Modal Styles */
